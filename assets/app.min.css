@@ -1,0 +1,71 @@
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-image: -webkit-linear-gradient(-225deg, #f3e9ee 0%, #c3deea 100%);
+  background-image: linear-gradient(-45deg, #f3e9ee 0%, #c3deea 100%);
+  background-repeat: no-repeat;
+}
+header {
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.redetv-bar {
+  background: #aeaeae;
+  color: #ffffff;
+  height: 30px;
+  border-bottom: 2px solid #8d8d8d;
+}
+.redetv-bar .redetv-brand {
+  text-align: center;
+  background: #666666;
+  height: 40px;
+  display: block;
+}
+.redetv-bar .redetv-menu {
+  text-transform: uppercase;
+  margin: 4px 0 0 0;
+}
+.redetv-bar .redetv-menu li {
+  margin: 0 -1px 0 0;
+  float: left;
+}
+.redetv-bar .redetv-menu li a {
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 20px;
+  padding: 0 10px;
+}
+.redetv-bar .redetv-menu li + li > a {
+  border-left: 1px solid #ffffff;
+}
+.header {
+  height: 187px;
+  background: #6699cc url(../images/background_header.png) no-repeat center top;
+  padding: 10px 0 0 0;
+}
+.header .brand {
+  margin-top: 40px;
+}
+.header .menu {
+  min-width: 600px;
+  margin: 0 auto;
+  display: block;
+}
+.header .menu ul {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  display: table;
+}
+.header .menu ul li {
+  float: left;
+}
+.header .menu ul li a {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #006699;
+  padding: 5px 10px;
+}
+

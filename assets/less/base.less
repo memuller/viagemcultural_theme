@@ -1,0 +1,73 @@
+@import (less) "variable.less";
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: @font;
+    background-image: -webkit-linear-gradient(-225deg, @gray-lighter 0%, @blue-light 100%);
+    background-image: linear-gradient(-45deg, @gray-lighter 0%, @blue-light 100%);
+    background-repeat: no-repeat; 
+}
+
+header {
+    .shadow(0.3);
+}
+
+.redetv-bar {
+    background: @gray-light;
+    color: #ffffff;
+    height: 30px;
+    border-bottom: 2px solid @gray;
+    .redetv-brand {
+        text-align: center;
+        background: @gray-dark;
+        height: 40px;
+        display: block;
+    }
+    .redetv-menu {
+        text-transform: uppercase;
+        margin: 4px 0 0 0;
+        li {
+            margin: 0 -1px 0 0;
+            float: left;
+            a {
+                color: #ffffff;
+                text-decoration: none;
+                line-height: 20px;
+                padding: 0 10px;
+            }
+        }
+        li + li > a {
+            border-left: 1px solid #ffffff;
+        }
+    }
+}
+.header {
+    height: 187px;
+    background: @blue url(../images/background_header.png) no-repeat center top;
+    padding: 10px 0 0 0;
+    .brand {
+        margin-top: 40px;
+    }
+    .menu {
+        min-width: 600px;
+        margin: 0 auto;
+        display: block;
+        ul {
+            margin-left:auto;
+            margin-right:auto;
+            margin-top: 10px;
+            display:table;
+            li {
+                float: left;
+                a {
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: @blue-dark;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+//-----Color palete: 
+//Gray
+@gray: #8d8d8d;
+@gray-dark: #666666;
+@gray-light: #aeaeae;
+@gray-lighter: #f3e9ee;
+
+//blue
+@blue: #6699cc;
+@blue-dark: #006699;
+@blue-light: #c3deea;
+
+.shadow(@alpha) {
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,@alpha);
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,@alpha);
+}
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.background-transition(@ms) {
+    -webkit-transition: background @ms ease-in-out;
+    -moz-transition: background @ms ease-in-out;
+    -ms-transition: background @ms ease-in-out;
+    -o-transition: background @ms ease-in-out;
+    transition: background @ms ease-in-out;
+}
+
+.all-transition(@ms) {
+    -webkit-transition: all @ms ease-in-out;
+    -moz-transition: all @ms ease-in-out;
+    -ms-transition: all @ms ease-in-out;
+    -o-transition: all @ms ease-in-out;
+    transition: all @ms ease-in-out;
+}
+
+.height-transition(@ms) {
+    -webkit-transition: height @ms ease-in-out;
+    -moz-transition: height @ms ease-in-out;
+    -ms-transition: height @ms ease-in-out;
+    -o-transition: height @ms ease-in-out;
+    transition: height @ms ease-in-out;
+}
+
+//-----Typography
+@font: 'Source Sans Pro', sans-serif;
