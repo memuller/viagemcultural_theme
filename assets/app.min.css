@@ -1,3 +1,35 @@
+.box {
+  border: 1px solid #f1f1f1;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+  background: #ffffff;
+}
+.button-blue {
+  font-size: 14px;
+  line-height: 25px;
+  color: #1278ad;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 10px;
+  border: 2px solid #1278ad;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+}
+.button-white {
+  font-size: 14px;
+  line-height: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 10px;
+  border: 2px solid #ffffff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+}
 body {
   width: 100%;
   height: 100%;
@@ -18,6 +50,7 @@ header {
 }
 .redetv-bar .redetv-brand {
   text-align: center;
+  width: 110px;
   background: #666666;
   height: 40px;
   display: block;
@@ -33,6 +66,7 @@ header {
 .redetv-bar .redetv-menu li a {
   color: #ffffff;
   text-decoration: none;
+  font-weight: 300;
   line-height: 20px;
   padding: 0 10px;
 }
@@ -66,6 +100,70 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   color: #006699;
+  font-weight: 300;
   padding: 5px 10px;
+}
+.next-trip {
+  height: 410px;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.next-trip div {
+  height: 155px;
+  position: absolute;
+  bottom: 0;
+  background-image: -webkit-linear-gradient(transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+  background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.next-trip div span {
+  font-size: 20px;
+  font-weight: 300;
+  float: left;
+  width: 100%;
+  padding: 20px 0 0 40px;
+}
+.next-trip div h1 {
+  font-size: 40px;
+  font-weight: 700;
+  float: left;
+  display: inline-block;
+  padding-left: 40px;
+  max-width: 745px;
+}
+.next-trip div .button-white {
+  float: left;
+  margin: 10px 0 0 20px;
+}
+.last-trips .title {
+  margin-bottom: 20px;
+}
+.last-trips .title h1 {
+  font-size: 30px;
+  color: #1278ad;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  float: left;
+}
+.last-trips .title .button-blue {
+  float: left;
+  margin: 5px 0 0 20px;
+}
+.last-trips .trip .trip-image {
+  height: 250px;
+  overflow: hidden;
+}
+.last-trips .trip .trip-info {
+  height: 120px;
+  background: #1278ad;
+}
+.last-trips .trip .trip-info h2 {
+  font-size: 25px;
+  color: #ffffff;
 }
 

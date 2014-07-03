@@ -1,11 +1,41 @@
 @import (less) "variable.less";
 
+.box {
+    border: 1px solid #f1f1f1;
+    .shadow(0.3);
+    background: #ffffff;
+}
+
+.button-blue {
+    font-size: 14px;
+    line-height: 25px;
+    color: @blue;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 10px;
+    border: 2px solid @blue;
+    .border-radius(3px);
+    display: inline-block;
+}
+
+.button-white {
+    font-size: 14px;
+    line-height: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 10px;
+    border: 2px solid #ffffff;
+    .border-radius(3px);
+    display: inline-block;
+}
+
 body {
     width: 100%;
     height: 100%;
     font-family: @font;
-    background-image: -webkit-linear-gradient(-225deg, @gray-lighter 0%, @blue-light 100%);
-    background-image: linear-gradient(-45deg, @gray-lighter 0%, @blue-light 100%);
+    background-image: -webkit-linear-gradient(-225deg, @gray-lighter 0%, @blue-lighter 100%);
+    background-image: linear-gradient(-45deg, @gray-lighter 0%, @blue-lighter 100%);
     background-repeat: no-repeat; 
 }
 
@@ -20,6 +50,7 @@ header {
     border-bottom: 2px solid @gray;
     .redetv-brand {
         text-align: center;
+        width: 110px;
         background: @gray-dark;
         height: 40px;
         display: block;
@@ -33,6 +64,7 @@ header {
             a {
                 color: #ffffff;
                 text-decoration: none;
+                font-weight: 300;
                 line-height: 20px;
                 padding: 0 10px;
             }
@@ -44,7 +76,7 @@ header {
 }
 .header {
     height: 187px;
-    background: @blue url(../images/background_header.png) no-repeat center top;
+    background: @blue-light url(../images/background_header.png) no-repeat center top;
     padding: 10px 0 0 0;
     .brand {
         margin-top: 40px;
@@ -65,8 +97,78 @@ header {
                     text-transform: uppercase;
                     text-decoration: none;
                     color: @blue-dark;
+                    font-weight: 300;
                     padding: 5px 10px;
                 }
+            }
+        }
+    }
+}
+
+.next-trip {
+    height: 410px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    div {
+        height: 155px;
+        position: absolute;
+        bottom: 0;
+        background-image: -webkit-linear-gradient(transparent 0%, rgba(0,0,0,0.3) 100%);
+        background-image: linear-gradient(transparent 0%, rgba(0,0,0,0.3) 100%);
+        background-repeat: no-repeat;
+        text-transform: uppercase;
+        color: #ffffff;
+        span {
+            font-size: 20px;
+            font-weight: 300;
+            float: left;
+            width: 100%;
+            padding: 20px 0 0 40px;
+        }
+        h1 {
+            font-size: 40px;
+            font-weight: 700;
+            float: left;
+            display: inline-block;
+            padding-left: 40px;
+            max-width: 745px;
+        }
+        .button-white {
+            float: left;
+            margin: 10px 0 0 20px;
+        }
+    }
+}
+
+.last-trips {
+    .title {
+        margin-bottom: 20px;
+        h1 {
+            font-size: 30px;
+            color: @blue;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-block;
+            float: left;
+        }
+        .button-blue {
+            float: left;
+            margin: 5px 0 0 20px;
+        }
+    }
+    .trip {
+        .trip-image {
+            height: 250px;
+            overflow: hidden;
+        }
+        .trip-info {
+            height: 120px;
+            background: @blue;
+            h2 {
+                font-size: 25px;
+                color: #ffffff;
             }
         }
     }
