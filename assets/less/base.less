@@ -16,7 +16,13 @@
     border: 2px solid @blue;
     .border-radius(3px);
     display: inline-block;
+    .all-transition(200ms);
+    &:hover {
+        background: @blue!important;
+        color: #ffffff!important;
+    }
 }
+
 
 .button-white {
     font-size: 14px;
@@ -28,6 +34,11 @@
     border: 2px solid #ffffff;
     .border-radius(3px);
     display: inline-block;
+    .all-transition(200ms);
+    &:hover {
+        background: #ffffff!important;
+        color: @blue!important;
+    }
 }
 
 body {
@@ -169,7 +180,72 @@ header {
             h2 {
                 font-size: 25px;
                 color: #ffffff;
+                text-transform: uppercase;
+                padding: 20px 15px;
+            }
+            .button-white {
+                margin: 0 0 0 15px;
             }
         }
+    }
+}
+
+.social {
+    border-top: 1px solid @blue;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px 0;
+    h2 {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: @blue;
+        padding: 0 0 10px 0;
+    }
+    .box {
+        height: 300px;
+    }
+    .facebook {
+        iframe {
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+    }
+    .sharing {
+        ul {
+            li {
+                font-size: 16px;
+                line-height: 75px;
+                text-transform: uppercase;
+                font-weight: 300;
+                height: 75px;
+                margin: 0 30px;
+                span {
+                    display: block;
+                    float: left;
+                    width: 270px;
+                }
+                div {
+                    width: 125px;
+                    float: left;
+                    iframe {
+                        margin: 10px 0 0 0;
+                    }
+                }
+            }
+            li+li {
+                border-top: 1px dotted @gray-lighter;
+            }
+        }
+    }
+}
+.footer {
+    background: @gray;
+    span {
+        font-size: 16px;
+        line-height: 50px;
+        font-weight: 300;
+        text-align: center;
+        color: #ffffff;
+        display: block;
     }
 }
