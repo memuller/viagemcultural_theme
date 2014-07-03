@@ -1,8 +1,10 @@
 <?php get_header(); ?>
 <section class="container_12">
     <section class="next-trip box grid_12">
-        <img class="next-trip-image grid_12" src=""/>
-        <div class="grid_12 alpha omega">
+        <div class="next-trip-image grid_12 alpha omega">
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/temporary/africa.jpg"/>
+        </div>
+        <div class="next-trip-info grid_12 alpha omega">
             <span>Próxima parada</span>
             <h1>Africa do Sul</h1>
             <a href="#" class="button-white">Saiba mais</a>
@@ -16,7 +18,7 @@
         <ul class="trips">
             <li class="trip box shadow grid_4 alpha">
                 <div class="trip-image">
-                    <img src=""/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/temporary/tailand.jpg"/>
                 </div>
                 <div class="trip-info">
                     <h2>Lorem Ipsum</h2>
@@ -26,7 +28,7 @@
             </li>
             <li class="trip box shadow grid_4">
                 <div class="trip-image">
-                    <img src=""/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/temporary/tailand.jpg"/>
                 </div>
                 <div class="trip-info">
                     <h2>Lorem Ipsum</h2>
@@ -36,7 +38,7 @@
             </li>
             <li class="trip box grid_4 omega">
                 <div class="trip-image">
-                    <img src=""/>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/temporary/tailand.jpg"/>
                 </div>
                 <div class="trip-info">
                     <h2>Lorem Ipsum</h2>

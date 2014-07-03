@@ -22,6 +22,14 @@
     border-radius: @radius;
 }
 
+.scale(@zoom) {
+    transform:scale(@zoom);
+    -ms-transform:scale(@zoom);
+    -moz-transform:scale(@zoom);
+    -webkit-transform:scale(@zoom);
+    -o-transform:scale(@zoom);
+}
+
 .background-transition(@ms) {
     -webkit-transition: background @ms ease-in-out;
     -moz-transition: background @ms ease-in-out;
