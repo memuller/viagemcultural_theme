@@ -5,7 +5,7 @@
             <img src="<?php bloginfo('stylesheet_directory'); ?>/images/temporary/africa.jpg"/>
         </div>
         <div class="next-trip-info grid_12 alpha omega">
-            <span>Próxima parada</span>
+            <span>Próxima parada:</span>
             <h1>Africa do Sul</h1>
             <a href="#" class="button-white">Saiba mais</a>
         </div>

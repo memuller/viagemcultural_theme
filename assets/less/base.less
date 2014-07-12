@@ -99,9 +99,11 @@ header {
         ul {
             margin-left:auto;
             margin-right:auto;
-            margin-top: 10px;
             display:table;
             li {
+                .border-radius(3px);
+                .all-transition(200ms);
+                line-height: 30px;
                 float: left;
                 a {
                     font-size: 16px;
@@ -111,6 +113,12 @@ header {
                     font-weight: 300;
                     padding: 5px 10px;
                 }
+                &:hover {
+                background: @blue-dark;
+                a {
+                    color: #ffffff;
+                } 
+            }
             }
         }
     }
@@ -122,17 +130,17 @@ header {
     margin-top: 50px;
     margin-bottom: 50px;
     position: relative;
+    .next-trip-image {
+        position: relative;
+        z-index: 0;
+        .all-transition(200ms);
+    }
     &:hover {
         .next-trip-image {
             img {
                 .scale(1.1);
             }
         }
-    }
-    .next-trip-image {
-        position: relative;
-        z-index: 0;
-        .all-transition(200ms);
     }
     .next-trip-info {
         height: 155px;
@@ -185,17 +193,17 @@ header {
     }
     .trip {
         overflow: hidden;
+        .all-transition(1s);
+        .trip-image {
+            height: 250px;
+            overflow: hidden;
+        }
         &:hover {
             .trip-image {
                 img {
                     .scale(1.1);
                 }
             }
-        }
-        .trip-image {
-            height: 250px;
-            overflow: hidden;
-            .all-transition(200ms);
         }
         .trip-info {
             height: 120px;
