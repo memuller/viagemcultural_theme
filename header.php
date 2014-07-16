@@ -9,7 +9,7 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav class="redetv-bar">
             <div class="container_12">
                 <a class="redetv-brand grid_2 alpha" href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/redetv.png"></a>
@@ -24,7 +24,7 @@
                 </ul>
             </div>
         </nav>
-        <section class="header">
+        <section class="header-content">
             <div class="container_12">
                 <div class="brand grid_4">
                     <a href="<?php bloginfo('url'); ?>" ><img src="<?php bloginfo('stylesheet_directory'); ?>/images/viagemcultural.png"></a>

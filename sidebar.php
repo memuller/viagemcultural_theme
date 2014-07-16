@@ -1,31 +1,40 @@
-<aside class="grid_3 pull_1 omega">
+<aside class="grid_4 alpha omega">
     <section class="advertising">
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/temporary/advertising.png"/>
     </section>
     <section class="related">
-        <div class="episode">
-            <h1>Episódio do programa</h1>
-            <ul>
-                <li>
-                    <img class="grid_1 alpha omega" src=""/>
-                    <h2 class="grid_2 omega">Lorem Ipsum</h2>
-                    <span>Programa do dia <time>12/12/12</time></span>
+        <div class="episode grid_4 alpha omega">
+            <h1>Assista o Episódio</h1>
+            <ul class="clearfix">
+                <li class="grid_4 alpha omega">
+                    <a href="#">
+                        <img class="grid_2 alpha" src=""/>
+                        <h2 class="grid_2 omega">Lorem Ipsum</h2>
+                        <span class="exhibition grid_2 omega">Programa do dia: <time>12/12/12</time></span>
+                    </a>
                 </li>
             </ul>
         </div>
-        <div class="related-tips">
+        <div class="related-tips grid_4 alpha omega">
             <h1>Veja outras dicas</h1>
-            <ul>
-                <li>
-                    <img class="grid_1 alpha omega" src=""/>
-                    <h2 class="grid_2 omega">Lorem Ipsum</h2>
+            <ul class="clearfix">
+                <li class="grid_4 alpha omega">
+                    <a href="#">
+                        <img class="grid_2 alpha" src=""/>
+                        <h2 class="grid_2 omega">Lorem Ipsum</h2>
+                    </a>
                 </li>
-                <li>
-                    <img class="grid_1 alpha omega" src=""/>
-                    <h2 class="grid_2 omega">Lorem Ipsum</h2>
+                <li class="grid_4 alpha omega">
+                    <a href="#">
+                        <img class="grid_2 alpha" src=""/>
+                        <h2 class="grid_2 omega">Lorem Ipsum</h2>
+                    </a>
                 </li>
-                <li>
-                    <img class="grid_1 alpha omega" src=""/>
-                    <h2 class="grid_2 omega">Lorem Ipsum</h2>
+                <li class="grid_4 alpha omega">
+                    <a href="#">
+                        <img class="grid_2 alpha" src=""/>
+                        <h2 class="grid_2 omega">Lorem Ipsum</h2>
+                    </a>
                 </li>
             </ul>
         </div>
