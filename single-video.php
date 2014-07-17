@@ -19,10 +19,10 @@ $travel = $post_object->parent();
                 <?php echo wp_oembed_get(get_the('url'), array('width' => 940)) ?>
             </div>
             <div class="entry-description grid_12 alpha omega">
-                <div class="date-info grid_4 alpha">
+                <div class="date-info grid_12 alpha">
                     <span>Programa exibido dia: <time><?php the_('broadcast_date') ?></time></span>
+                    <a href="<?php echo $travel->permalink ?>" class="button-blue">Dicas sobre República Tcheca</a>
                 </div>
-                <a href="<?php echo $travel->permalink ?>">Link do programa caso você queira usar em algum lugar</a>
                 <div class="video-info grid_10">
                     <p> <?php echo $travel->description ?> </p>
                 </div>

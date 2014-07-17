@@ -70,7 +70,6 @@ body {
         text-transform: uppercase;
         margin: 4px 0 0 0;
         li {
-            margin: 0 -1px 0 0;
             float: left;
             a {
                 color: #ffffff;
@@ -127,18 +126,6 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
     position: relative;
-    .next-trip-image {
-        position: relative;
-        z-index: 0;
-        .all-transition(200ms);
-    }
-    &:hover {
-        .next-trip-image {
-            img {
-                .scale(1.1);
-            }
-        }
-    }
     .next-trip-info {
         height: 155px;
         position: absolute;
@@ -190,17 +177,8 @@ body {
     }
     .trip {
         overflow: hidden;
-        .all-transition(1s);
         .trip-image {
             height: 250px;
-            overflow: hidden;
-        }
-        &:hover {
-            .trip-image {
-                img {
-                    .scale(1.1);
-                }
-            }
         }
         .trip-info {
             height: 120px;
@@ -349,15 +327,116 @@ body {
     }
     // Episode content
     .date-info {
+        font-size: 20px;
         text-transform: uppercase;
-        color: #ffffff;
+        color: @blue;
         margin-top: 10px;
         padding: 10px 30px;
-        background: @gray;
+        span {
+            margin-right: 20px;
+        }
     }
     .video-info {
         color: @gray-dark;
         font-weight: 300;
         padding: 30px 20px;
+    }
+    // Tip list
+    .tip-list {
+        padding: 30px 0;
+        margin-left: 30px;
+        .tip {
+            article {
+                width: 100%;
+                height: 200px;
+                display: block;
+                position: relative;
+                .all-transition(200ms);
+                &:hover {
+                    background: #f1f1f1;
+                }
+                .tip-thumb {
+                    overflow: hidden;
+                    height: 200px;
+                }
+                .tip-title {
+                    padding: 20px 0;
+                    margin-left: 20px;
+                }
+                .tip-links {
+                    position: absolute;
+                    bottom: 20px;
+                    margin-left: 20px;
+                    a {
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+        li + li {
+            border-top: 1px solid @gray-light;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+    }
+    .pagination {
+        background: #1278ad;
+        height: 50px;
+        width: 100%;
+        float: left;
+        .pagination-buttons {
+            margin: 0 auto;
+            a {
+                &:first-child {
+                    float: left;
+                    margin: 10px 0 0 30px;
+                }
+                &:last-child {
+                    float: right;
+                    margin: 10px 30px 0 0;
+                }
+            }
+        }
+    }
+    .episodes {
+        padding: 30px 0 10px 0;
+        .episode {
+            margin: 0 0 20px 12px;
+            overflow: hidden;
+            border: 1px solid #f1f1f1;
+            .all-transition(200ms);
+            &:hover {
+                background: #f1f1f1;
+            }
+            .episode-image {
+                height: 150px;
+                width: 180px;
+                overflow: hidden;
+                float: left;
+            }
+            .episode-info {
+                height: 150px;
+                width: 278px;
+                float: left;
+                position: relative;
+                h2 {
+                    font-size: 25px;
+                    color: @blue;
+                    text-transform: uppercase;
+                    padding: 20px 15px;
+                    width: 275px;
+                }
+                .button-blue {
+                    position: absolute;
+                    bottom: 10px;
+                    &:nth-child(2) {
+                        left: 15px;
+                    }
+                    &:last-child {
+                        right: 15px;
+                    }
+                }
+            }
+        }
     }
 }
