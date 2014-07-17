@@ -10,7 +10,17 @@ get_header(); ?>
     </div>
     <div class="box container_12">
         <ul class="episodes">
-            <li class="episode shadow grid_4 alpha omega">
+            <li class="episode shadow grid_6 alpha omega">
+                <div class="episode-image">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/temporary/tailand.jpg"/>
+                </div>
+                <div class="episode-info">
+                    <h2>Estados Unidos - Huston</h2>
+                    <a href="#" class="button-blue">Ver dica</a>
+                    <a href="#" class="button-blue">Assistir o programa</a>
+                </div>
+            </li>
+            <li class="episode shadow grid_6 alpha omega">
                 <div class="episode-image">
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/images/temporary/tailand.jpg"/>
                 </div>
@@ -20,7 +30,7 @@ get_header(); ?>
                     <a href="#" class="button-blue">Assistir o programa</a>
                 </div>
             </li>
-            <li class="episode shadow grid_4 alpha omega">
+            <li class="episode grid_6 alpha omega">
                 <div class="episode-image">
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/images/temporary/tailand.jpg"/>
                 </div>
@@ -30,7 +40,7 @@ get_header(); ?>
                     <a href="#" class="button-blue">Assistir o programa</a>
                 </div>
             </li>
-            <li class="episode grid_4 alpha omega">
+            <li class="episode grid_6 alpha omega">
                 <div class="episode-image">
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/images/temporary/tailand.jpg"/>
                 </div>
@@ -40,7 +50,7 @@ get_header(); ?>
                     <a href="#" class="button-blue">Assistir o programa</a>
                 </div>
             </li>
-            <li class="episode grid_4 alpha omega">
+            <li class="episode grid_6 alpha omega">
                 <div class="episode-image">
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/images/temporary/tailand.jpg"/>
                 </div>
@@ -50,17 +60,7 @@ get_header(); ?>
                     <a href="#" class="button-blue">Assistir o programa</a>
                 </div>
             </li>
-            <li class="episode grid_4 alpha omega">
-                <div class="episode-image">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/temporary/tailand.jpg"/>
-                </div>
-                <div class="episode-info">
-                    <h2>Lorem Ipsum</h2>
-                    <a href="#" class="button-blue">Ver dica</a>
-                    <a href="#" class="button-blue">Assistir o programa</a>
-                </div>
-            </li>
-            <li class="episode grid_4 alpha omega">
+            <li class="episode grid_6 alpha omega">
                 <div class="episode-image">
                     <img src="<?php bloginfo('stylesheet_directory'); ?>/images/temporary/tailand.jpg"/>
                 </div>

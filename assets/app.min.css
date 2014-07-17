@@ -402,7 +402,7 @@ body {
   padding: 30px 0 10px 0;
 }
 .container .episodes .episode {
-  margin: 0 0 20px 15px;
+  margin: 0 0 20px 12px;
   overflow: hidden;
   border: 1px solid #f1f1f1;
   -webkit-transition: all 200ms ease-in-out;
@@ -415,18 +415,32 @@ body {
   background: #f1f1f1;
 }
 .container .episodes .episode .episode-image {
-  height: 250px;
+  height: 150px;
+  width: 180px;
+  overflow: hidden;
+  float: left;
 }
 .container .episodes .episode .episode-info {
-  height: 120px;
+  height: 150px;
+  width: 278px;
+  float: left;
+  position: relative;
 }
 .container .episodes .episode .episode-info h2 {
   font-size: 25px;
   color: #1278ad;
   text-transform: uppercase;
   padding: 20px 15px;
+  width: 275px;
 }
 .container .episodes .episode .episode-info .button-blue {
-  margin: 0 0 0 15px;
+  position: absolute;
+  bottom: 10px;
+}
+.container .episodes .episode .episode-info .button-blue:nth-child(2) {
+  left: 15px;
+}
+.container .episodes .episode .episode-info .button-blue:last-child {
+  right: 15px;
 }
 
