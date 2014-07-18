@@ -5,6 +5,8 @@ add_theme_support('menus');
 add_theme_support('post-thumbnails');
 add_image_size( 'trip_thumbnail', 940, 410, array( 'center', 'center' ));
 add_image_size( 'tip_thumbnail', 300, 250, array( 'center', 'center' ));
+add_image_size( 'sidebar_thumbnail', 140, 100, array( 'center', 'center' ));
+add_image_size( 'episode_thumbnail', 180, 150, array( 'center', 'center' ));
 
     function custom_nav_menu()
     {
