@@ -1,15 +1,20 @@
 <?php get_header(); ?>
 <section class="container_12">
-    <section class="next-trip box grid_12">
-        <div class="next-trip-image grid_12 alpha omega">
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/temporary/africa.jpg"/>
-        </div>
-        <div class="next-trip-info grid_12 alpha omega">
-            <span>Próxima parada:</span>
-            <h1>Africa do Sul</h1>
-            <a href="#" class="button-white">Saiba mais</a>
-        </div>
-    </section>
+    <?php $next_trip = \ViagemCultural\Travel::next(); ?>
+    <?php if ($next_trip): ?>
+        <section class="next-trip box grid_12">
+            <div class="next-trip-image grid_12 alpha omega">
+                <?php echo get_the_post_thumbnail($next_trip->ID, 'trip_thumbnail') ?>
+            </div>
+            <div class="next-trip-info grid_12 alpha omega">
+                <span>Próxima parada:</span>
+                <h1><?php echo $next_trip->title ?></h1>
+                <a href="<?php echo $next_trip->permalink ?>" class="button-white">Saiba mais</a>
+            </div>
+        </section>
+    <?php else: ?>
+        <?php // teaser fixo para a página institucional quando não tiver próxima viagem ?>
+    <?php endif; ?>   
     <section class="last-trips grid_12">
         <div class="title grid_12 alpha omega">
             <h1>Ultimas Viagens</h1>
