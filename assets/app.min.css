@@ -192,6 +192,9 @@ body {
 }
 .header-content .menu ul li:hover .submenu ul li:first-child {
   border-bottom: 1px solid #f1f1f1;
+  -webkit-border-radius: none;
+  -moz-border-radius: none;
+  border-radius: none;
 }
 .header-content .menu ul li:hover .submenu ul li ul {
   display: none;
@@ -207,6 +210,9 @@ body {
 }
 .header-content .menu ul li:hover .submenu ul li ul > li:first-child {
   border: 0;
+}
+.header-content .menu ul li:hover .submenu ul li ul > li:hover {
+  background: #f1f1f1;
 }
 .header-content .menu ul li:hover .submenu ul li:hover ul {
   display: block;
