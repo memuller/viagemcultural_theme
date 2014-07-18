@@ -3,10 +3,23 @@ require_once 'lib/enqueue.php';
 
 add_theme_support('menus');
 add_theme_support('post-thumbnails');
-add_image_size( 'trip_thumbnail', 940, 410, array( 'center', 'center' ));
-add_image_size( 'tip_thumbnail', 300, 250, array( 'center', 'center' ));
-add_image_size( 'sidebar_thumbnail', 140, 100, array( 'center', 'center' ));
-add_image_size( 'episode_thumbnail', 180, 150, array( 'center', 'center' ));
+add_image_size( 'trip_thumbnail', 940, 410 );
+add_image_size( 'tip_thumbnail', 300, 250 );
+add_image_size( 'sidebar_thumbnail', 140, 100 );
+add_image_size( 'episode_thumbnail', 180, 150 );
+
+ // Enable WP_DEBUG mode
+define('WP_DEBUG', true);
+
+// Enable Debug logging to the /wp-content/debug.log file
+define('WP_DEBUG_LOG', true);
+
+// Disable display of errors and warnings 
+define('WP_DEBUG_DISPLAY', false);
+@ini_set('display_errors',0);
+
+// Use dev versions of core JS and CSS files (only needed if you are modifying these core files)
+define('SCRIPT_DEBUG', true);
 
     function custom_nav_menu()
     {
