@@ -15,42 +15,26 @@
     <?php else: ?>
         <?php // teaser fixo para a página institucional quando não tiver próxima viagem ?>
     <?php endif; ?>   
+
     <section class="last-trips grid_12">
         <div class="title grid_12 alpha omega">
             <h1>Ultimas Viagens</h1>
             <a href="#" class="button-blue">Mais viagens</a>
         </div>
         <ul class="trips">
-            <li class="trip box shadow grid_4 alpha">
-                <div class="trip-image">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/temporary/tailand.jpg"/>
-                </div>
-                <div class="trip-info">
-                    <h2>Lorem Ipsum</h2>
-                    <a href="#" class="button-white">Saiba mais</a>
-                    <a href="#" class="button-white">Assistir o programa</a>
-                </div>
-            </li>
-            <li class="trip box shadow grid_4">
-                <div class="trip-image">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/temporary/tailand.jpg"/>
-                </div>
-                <div class="trip-info">
-                    <h2>Lorem Ipsum</h2>
-                    <a href="#" class="button-white">Saiba mais</a>
-                    <a href="#" class="button-white">Assistir o programa</a>
-                </div>
-            </li>
-            <li class="trip box grid_4 omega">
-                <div class="trip-image">
-                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/temporary/tailand.jpg"/>
-                </div>
-                <div class="trip-info">
-                    <h2>Lorem Ipsum</h2>
-                    <a href="#" class="button-white">Saiba mais</a>
-                    <a href="#" class="button-white">Assistir o programa</a>
-                </div>
-            </li>
+            <?php foreach (array_slice($next_trip->siblings(), 0, 3) as $trip): ?>
+                <?php $video = $trip->children('video'); $video = $video[0]; ?>
+                <li class="trip box shadow grid_4 alpha">
+                    <div class="trip-image">
+                        <?php echo get_the_post_thumbnail($trip->ID, 'tip_thumbnail') ?>
+                    </div>
+                    <div class="trip-info">
+                        <h2><?php echo $trip->title ?></h2>
+                        <a href="<?php echo $trip->permalink ?>" class="button-white">Saiba mais</a>
+                        <a href="<?php echo $video->permalink ?>" class="button-white">Assistir o programa</a>
+                    </div>
+                </li>
+            <?php endforeach; ?>
         </ul>
     </section>
     <section class="social grid_12">
