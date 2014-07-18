@@ -33,11 +33,36 @@
             <div class="container_12">
                 <nav class="menu clearfix">
                     <ul>
-                        <li><a href="">Inicío</a></li>
-                        <li><a href="">Dicas de viagem</a></li>
-                        <li><a href="">Sobre o programa</a></li>
+                        <li><a href="<?php bloginfo('url'); ?>">Inicío</a></li>
+                        <li><a>Dicas de viagem</a>
+                            <div class="spacing-arrow">
+                                <div class="top-arrow"></div>
+                            </div>
+                            <div class="submenu">
+                                <ul>
+                                    <li><a>Internacional</a>
+                                        <ul>
+                                            <li><a href="#">África</a></li>
+                                            <li><a href="#">América</a></li>
+                                            <li><a href="#">Ásia</a></li>
+                                            <li><a href="#">Europa</a></li>
+                                            <li><a href="#">Oceania</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a>Nacional</a>
+                                        <ul>
+                                            <li><a href="#">Centro-oeste</a></li>
+                                            <li><a href="#">Nordeste</a></li>
+                                            <li><a href="#">Norte</a></li>
+                                            <li><a href="#">Sul</a></li>
+                                            <li><a href="#">Sudeste</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                         <li><a href="">Episódios</a></li>
-                        <li><a href="">Contato</a></li>
+                        <?php custom_nav_menu(); ?>
                     </ul>
                 </nav>
             </div>
