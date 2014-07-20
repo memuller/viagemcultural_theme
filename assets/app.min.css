@@ -482,6 +482,28 @@ body {
 .container .pagination .pagination-buttons {
   margin: 0 auto;
 }
+.container .pagination .pagination-buttons a {
+  font-size: 14px;
+  line-height: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 10px;
+  border: 2px solid #ffffff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.container .pagination .pagination-buttons a:hover {
+  background: #ffffff!important;
+  color: #1278ad !important;
+}
 .container .pagination .pagination-buttons a:first-child {
   float: left;
   margin: 10px 0 0 30px;
