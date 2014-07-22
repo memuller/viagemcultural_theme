@@ -497,22 +497,33 @@ body {
     .episodes {
         padding: 30px 0 10px 0;
         .episode {
-            margin: 0 0 20px 12px;
             overflow: hidden;
             border: 1px solid #f1f1f1;
+            margin: 0 0 0 50px;
             .all-transition(200ms);
             &:hover {
                 background: #f1f1f1;
+                .episode-image {
+                    opacity: 0.7;
+                    filter: alpha(opacity=70);
+                }
             }
             .episode-image {
                 height: 150px;
                 width: 180px;
                 overflow: hidden;
                 float: left;
+                position: relative;
+                .play {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin: -16px 0 0 -26px;
+                }
             }
             .episode-info {
                 height: 150px;
-                width: 278px;
+                width: 678px;
                 float: left;
                 position: relative;
                 h2 {
@@ -520,16 +531,21 @@ body {
                     color: @blue;
                     text-transform: uppercase;
                     padding: 20px 15px;
-                    width: 275px;
+                    width: 678px;
                 }
-                .button-blue {
+                .buttons {
                     position: absolute;
                     bottom: 10px;
-                    &:nth-child(2) {
-                        left: 15px;
+                    .button-blue {
+                        margin: 0 0 0 15px;
                     }
-                    &:last-child {
-                        right: 15px;
+                    span {
+                        text-transform: uppercase;
+                        color: @gray-dark;
+                        margin: 0 0 0 30px;
+                        span {
+                        margin: 0;
+                        }
                     }
                 }
             }

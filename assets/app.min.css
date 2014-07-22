@@ -524,9 +524,9 @@ body {
   padding: 30px 0 10px 0;
 }
 .container .episodes .episode {
-  margin: 0 0 20px 12px;
   overflow: hidden;
   border: 1px solid #f1f1f1;
+  margin: 0 0 0 50px;
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
   -ms-transition: all 200ms ease-in-out;
@@ -536,15 +536,26 @@ body {
 .container .episodes .episode:hover {
   background: #f1f1f1;
 }
+.container .episodes .episode:hover .episode-image {
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
 .container .episodes .episode .episode-image {
   height: 150px;
   width: 180px;
   overflow: hidden;
   float: left;
+  position: relative;
+}
+.container .episodes .episode .episode-image .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -16px 0 0 -26px;
 }
 .container .episodes .episode .episode-info {
   height: 150px;
-  width: 278px;
+  width: 678px;
   float: left;
   position: relative;
 }
@@ -553,16 +564,21 @@ body {
   color: #1278ad;
   text-transform: uppercase;
   padding: 20px 15px;
-  width: 275px;
+  width: 678px;
 }
-.container .episodes .episode .episode-info .button-blue {
+.container .episodes .episode .episode-info .buttons {
   position: absolute;
   bottom: 10px;
 }
-.container .episodes .episode .episode-info .button-blue:nth-child(2) {
-  left: 15px;
+.container .episodes .episode .episode-info .buttons .button-blue {
+  margin: 0 0 0 15px;
 }
-.container .episodes .episode .episode-info .button-blue:last-child {
-  right: 15px;
+.container .episodes .episode .episode-info .buttons span {
+  text-transform: uppercase;
+  color: #666666;
+  margin: 0 0 0 30px;
+}
+.container .episodes .episode .episode-info .buttons span span {
+  margin: 0;
 }
 
