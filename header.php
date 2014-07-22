@@ -6,6 +6,9 @@
     <meta name="description" content="">
     <link type="text/css" rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/image-scale.min.js"></script>
     <?php wp_head(); ?>
 </head>
 <body>
@@ -61,7 +64,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="">Episódios</a></li>
+                        <li><a href="<?php bloginfo('url'); ?>/videos">Episódios</a></li>
                         <?php custom_nav_menu(); ?>
                     </ul>
                 </nav>

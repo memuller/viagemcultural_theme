@@ -4,7 +4,7 @@
     <?php if ($next_trip): ?>
         <section class="next-trip box grid_12">
             <div class="next-trip-image grid_12 alpha omega">
-                <?php echo get_the_post_thumbnail($next_trip->ID, 'trip_thumbnail') ?>
+                <?php echo get_the_post_thumbnail($next_trip->ID, 'trip_thumbnail', array('class' => 'scale', 'data-scale' => 'best-fill', 'data-align' => 'center')) ?>
             </div>
             <div class="next-trip-info grid_12 alpha omega">
                 <span>Próxima parada:</span>
@@ -26,12 +26,12 @@
                 <?php $video = $trip->children('video'); $video = $video[0]; ?>
                 <li class="trip box shadow grid_4 alpha">
                     <div class="trip-image">
-                        <?php echo get_the_post_thumbnail($trip->ID, 'tip_thumbnail') ?>
+                        <?php echo get_the_post_thumbnail($trip->ID, 'tip_thumbnail', array('class' => 'scale', 'data-scale' => 'best-fill', 'data-align' => 'center')) ?>
                     </div>
                     <div class="trip-info">
                         <h2><?php echo $trip->title ?></h2>
-                        <a href="<?php echo $trip->permalink ?>" class="button-white">Saiba mais</a>
-                        <a href="<?php echo $video->permalink ?>" class="button-white">Assistir o programa</a>
+                        <a href="<?php echo $trip->permalink ?>" class="button-white more">Saiba mais</a>
+                        <a href="<?php echo $video->permalink ?>" class="button-white watch">Assistir o programa</a>
                     </div>
                 </li>
             <?php endforeach; ?>

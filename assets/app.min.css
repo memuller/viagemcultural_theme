@@ -235,8 +235,8 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-image: -webkit-linear-gradient(transparent 0%, rgba(0, 0, 0, 0.3) 100%);
-  background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+  background-image: -webkit-linear-gradient(transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.8) 100%);
   background-repeat: no-repeat;
   text-transform: uppercase;
   color: #ffffff;
@@ -280,11 +280,14 @@ body {
   overflow: hidden;
 }
 .last-trips .trip .trip-image {
-  height: 250px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
 }
 .last-trips .trip .trip-info {
-  height: 120px;
+  height: 160px;
   background: #1278ad;
+  position: relative;
 }
 .last-trips .trip .trip-info h2 {
   font-size: 25px;
@@ -294,6 +297,11 @@ body {
 }
 .last-trips .trip .trip-info .button-white {
   margin: 0 0 0 15px;
+  position: absolute;
+  bottom: 15px;
+}
+.last-trips .trip .trip-info .watch {
+  right: 15px;
 }
 .social {
   border-top: 1px solid #1278ad;

@@ -217,8 +217,8 @@ body {
         position: absolute;
         bottom: 0;
         left: 0;
-        background-image: -webkit-linear-gradient(transparent 0%, rgba(0,0,0,0.3) 100%);
-        background-image: linear-gradient(transparent 0%, rgba(0,0,0,0.3) 100%);
+        background-image: -webkit-linear-gradient(transparent 0%, rgba(0,0,0,0.8) 100%);
+        background-image: linear-gradient(transparent 0%, rgba(0,0,0,0.8) 100%);
         background-repeat: no-repeat;
         text-transform: uppercase;
         color: #ffffff;
@@ -264,11 +264,14 @@ body {
     .trip {
         overflow: hidden;
         .trip-image {
-            height: 250px;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
         }
         .trip-info {
-            height: 120px;
+            height: 160px;
             background: @blue;
+            position: relative;
             h2 {
                 font-size: 25px;
                 color: #ffffff;
@@ -277,6 +280,11 @@ body {
             }
             .button-white {
                 margin: 0 0 0 15px;
+                position: absolute;
+                bottom: 15px;
+            }  
+            .watch {
+                right: 15px;
             }
         }
     }
