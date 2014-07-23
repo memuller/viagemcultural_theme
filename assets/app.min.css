@@ -21,6 +21,7 @@
   -ms-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
+  background: transparent;
 }
 .button-blue:hover {
   background: #1278ad !important;
@@ -43,9 +44,10 @@
   -ms-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
+  background: transparent;
 }
 .button-white:hover {
-  background: #ffffff!important;
+  background: #ffffff;
   color: #1278ad !important;
 }
 body {
@@ -371,13 +373,127 @@ body {
 .container .entry-content {
   padding: 30px;
 }
-.container .entry-content p {
+.container .entry-content h2 {
   font-size: 18px;
+  color: #1278ad;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 20px 0 10px;
+}
+.container .entry-content p,
+.container .entry-content ul {
   font-weight: 300;
+  line-height: 1.2;
   letter-spacing: 1px;
   word-spacing: 1px;
-  margin-bottom: 20px;
   color: #666666;
+}
+.container .entry-content strong {
+  font-weight: 600;
+}
+.container .entry-content a {
+  color: #666666;
+}
+.container .entry-content p {
+  margin: 0 0 10px 0;
+  width: 700px;
+}
+.container .entry-content ul {
+  list-style: square;
+  padding: 0 0 0 20px;
+  margin: 20px 0;
+}
+.container .entry-content ul li + li {
+  margin: 10px 0 0 0;
+}
+.container .contact-entry {
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  color: #666666;
+  height: 540px;
+  padding: 30px;
+  position: relative;
+}
+.container .contact-entry p {
+  margin: 10px 0;
+}
+.container .contact-entry p a {
+  color: #1278ad;
+}
+.container .contact-entry p strong {
+  font-weight: 600;
+}
+.container .contact-entry .wpcf7 {
+  width: 450px;
+  height: 538px;
+  background: #1278ad;
+  padding: 10px 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.container .contact-entry .wpcf7 p {
+  color: #fff;
+}
+.container .contact-entry .wpcf7 input,
+.container .contact-entry .wpcf7 textarea {
+  font-size: 16px;
+  color: #8d8d8d;
+  font-weight: 300;
+  width: 370px;
+  padding: 5px 10px;
+  border: 0;
+  margin: 10px 0 0 0;
+  background: #ffffff;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.container .contact-entry .wpcf7 input[type="submit"] {
+  width: 80px;
+  font-size: 14px !important;
+  line-height: 25px !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  padding: 0 10px !important;
+  border: 2px solid #ffffff !important;
+  -webkit-border-radius: 3px !important;
+  -moz-border-radius: 3px !important;
+  border-radius: 3px !important;
+  display: inline-block !important;
+  -webkit-transition: all 200ms ease-in-out !important;
+  -moz-transition: all 200ms ease-in-out !important;
+  -ms-transition: all 200ms ease-in-out !important;
+  -o-transition: all 200ms ease-in-out !important;
+  transition: all 200ms ease-in-out !important;
+  background: transparent !important;
+}
+.container .contact-entry .wpcf7 input[type="submit"]:hover {
+  background: #ffffff !important;
+  color: #1278ad !important;
+}
+.container .contact-entry .wpcf7 input[type="submit"]:hover {
+  background: #ffffff;
+}
+.container .contact-entry .wpcf7 textarea {
+  height: 120px;
+  resize: none;
+}
+.container .contact-entry .wpcf7 .wpcf7-validation-errors,
+.container .contact-entry .wpcf7 .wpcf7-mail-sent-ok {
+  width: 371px;
+  margin: 0;
+  color: #ffffff;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.container .contact-entry .wpcf7 .wpcf7-mail-sent-ok {
+  border: 2px solid #58C02C;
 }
 .container aside {
   padding: 30px 0;
@@ -422,7 +538,7 @@ body {
   margin: -16px 0 0 -26px;
 }
 .container aside ul li a h2 {
-  padding: 0 0 60px 0;
+  padding: 10px 0 60px 0;
   text-transform: uppercase;
 }
 .container aside ul li a .exhibition {
@@ -531,9 +647,10 @@ body {
   -ms-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
+  background: transparent;
 }
 .container .pagination .pagination-buttons a:hover {
-  background: #ffffff!important;
+  background: #ffffff;
   color: #1278ad !important;
 }
 .container .pagination .pagination-buttons a:first-child {
