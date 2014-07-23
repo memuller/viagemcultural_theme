@@ -436,6 +436,13 @@ body {
 }
 .container aside ul li:hover {
   background: #f1f1f1;
+  background: -moz-linear-gradient(top, #f1f1f1 0%, rgba(241, 241, 241, 0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f1f1f1), color-stop(100%, rgba(241, 241, 241, 0)));
+  background: -webkit-linear-gradient(top, #f1f1f1 0%, rgba(241, 241, 241, 0) 100%);
+  background: -o-linear-gradient(top, #f1f1f1 0%, rgba(241, 241, 241, 0) 100%);
+  background: -ms-linear-gradient(top, #f1f1f1 0%, rgba(241, 241, 241, 0) 100%);
+  background: linear-gradient(to bottom, #f1f1f1 0%, rgba(241, 241, 241, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color-1', endColorstr='@color-2', GradientType=0);
 }
 .container aside ul li:hover .episode-image {
   opacity: 0.7;
@@ -542,7 +549,6 @@ body {
 }
 .container .episodes .episode {
   overflow: hidden;
-  border: 1px solid #f1f1f1;
   margin: 0 0 0 50px;
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
@@ -550,12 +556,14 @@ body {
   -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
-.container .episodes .episode:hover {
-  background: #f1f1f1;
-}
 .container .episodes .episode:hover .episode-image {
   opacity: 0.7;
   filter: alpha(opacity=70);
+}
+.container .episodes .episode + li {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #8d8d8d;
 }
 .container .episodes .episode .episode-image {
   height: 150px;

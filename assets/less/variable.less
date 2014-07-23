@@ -54,5 +54,16 @@
     transition: height @ms ease-in-out;
 }
 
+.gradient(@color-1; @percentage-1; @color-2; @percentage-2) {
+    background: @color-1;
+    background: -moz-linear-gradient(top,  @color-1 @percentage-1, @color-2 @percentage-2);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@percentage-1,@color-1), color-stop(@percentage-2,@color-2));
+    background: -webkit-linear-gradient(top,  @color-1 @percentage-1,@color-2 @percentage-2);
+    background: -o-linear-gradient(top,  @color-1 @percentage-1,@color-2 @percentage-2);
+    background: -ms-linear-gradient(top,  @color-1 @percentage-1,@color-2 @percentage-2);
+    background: linear-gradient(to bottom,  @color-1 @percentage-1,@color-2 @percentage-2);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color-1', endColorstr='@color-2',GradientType=0 );
+}
+
 //-----Typography
 @font: 'Source Sans Pro', sans-serif;
