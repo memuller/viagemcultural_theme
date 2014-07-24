@@ -17,12 +17,12 @@
     .border-radius(3px);
     display: inline-block;
     .all-transition(200ms);
+    background: transparent;
     &:hover {
         background: @blue!important;
         color: #ffffff!important;
     }
 }
-
 
 .button-white {
     font-size: 14px;
@@ -35,8 +35,9 @@
     .border-radius(3px);
     display: inline-block;
     .all-transition(200ms);
+    background: transparent;
     &:hover {
-        background: #ffffff!important;
+        background: #ffffff;
         color: @blue!important;
     }
 }
@@ -363,13 +364,107 @@ body {
     }
     .entry-content {
         padding: 30px;
-        p {
+        h2 {
             font-size: 18px;
+            color: @blue;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin: 20px 0 10px;
+        }
+        p,
+        ul {
             font-weight: 300;
+            line-height: 1.2;
             letter-spacing: 1px;
             word-spacing: 1px;
-            margin-bottom: 20px;
             color: @gray-dark;
+        }
+        strong {
+            font-weight: 600;
+        }
+        a {
+            color: @gray-dark;
+        }
+        p {
+            margin: 0 0 10px 0;
+            width: 700px;
+        }
+        ul {
+            list-style: square;
+            padding: 0 0 0 20px;
+            margin: 20px 0;
+            li {
+                & + li {
+                    margin: 10px 0 0 0;
+                }
+            }
+        }
+    }
+    .contact-entry {
+        font-weight: 300;
+        line-height: 1.2;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        color: @gray-dark;
+        height: 540px;
+        padding: 30px;
+        position: relative;
+        p {
+            margin: 10px 0;
+            a {
+                color: @blue;
+            }
+            strong {
+                font-weight: 600;
+            }
+        }
+        .wpcf7 {
+            width: 450px;
+            height: 538px;
+            background: @blue;
+            padding: 10px 30px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            p {
+                color: #fff;
+            }
+            input,
+            textarea {
+                font-size: 16px;
+                color: @gray;
+                font-weight: 300;
+                width: 370px;
+                padding: 5px 10px;
+                border: 0;
+                margin: 10px 0 0 0;
+                background: #ffffff;
+                .border-radius(3px);
+            }
+            input {
+                &[type="submit"] {
+                    width: 80px;
+                    .button-white !important;
+                    &:hover {
+                        background: #ffffff;
+                    }
+                }
+            }
+            textarea {
+                height: 120px;
+                resize: none;
+            }
+            .wpcf7-validation-errors,
+            .wpcf7-mail-sent-ok {
+                width: 371px;
+                margin: 0;
+                color: #ffffff;
+                text-align: center;
+                .border-radius(3px;)
+            }
+            .wpcf7-mail-sent-ok {
+                border: 2px solid #58C02C;
+            }
         }
     }
     // Sidebar
@@ -410,7 +505,7 @@ body {
                         }
                     }
                     h2 {
-                        padding: 0 0 60px 0;
+                        padding: 10px 0 60px 0;
                         text-transform: uppercase;
                     }
                     .exhibition {
@@ -424,7 +519,7 @@ body {
                     }
                 }
                 &:hover {
-                    background: #f1f1f1;
+                    .gradient(#f1f1f1; 0%; rgba(241,241,241,0); 100%);
                     .episode-image {
                         opacity: 0.7;
                         filter: alpha(opacity=70);
@@ -515,15 +610,18 @@ body {
         padding: 30px 0 10px 0;
         .episode {
             overflow: hidden;
-            border: 1px solid #f1f1f1;
             margin: 0 0 0 50px;
             .all-transition(200ms);
             &:hover {
-                background: #f1f1f1;
                 .episode-image {
                     opacity: 0.7;
                     filter: alpha(opacity=70);
                 }
+            }
+            & + li {
+                margin-top: 15px;
+                padding-top: 15px;
+                border-top: 1px solid @gray;
             }
             .episode-image {
                 height: 150px;
