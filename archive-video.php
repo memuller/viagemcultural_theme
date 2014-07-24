@@ -23,7 +23,7 @@ get_header(); ?>
                                 <a href="<?php echo $travel->permalink ?>" class="button-blue">Ver dica</a>    
                             <?php endif ?>
                             <a href="<?php echo $video->permalink ?>" class="button-blue">Assistir o programa</a>
-                            <span>Programa exibido dia: <time><?php the_('broadcast_date') ?></time></span>
+                            <span>Programa exibido dia: <time><?php echo get_the_('broadcast_date') ?></time></span>
                         </div>
                     </div>
                 </li>

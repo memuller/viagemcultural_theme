@@ -15,7 +15,7 @@ global $post, $post_object; $post_object = new \ViagemCultural\Travel($post);
                 <div class="box entry-container grid_12">
                     <div class="entry-content grid_8 alpha omega">
                         <?php if ($post_object->next): ?>
-                            <?php the_('teaser') ?>
+                            <?php echo get_the_('teaser') ?>
                         <?php else: ?>
                             <?php the_content() ?>
                         <?php endif; ?>   

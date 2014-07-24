@@ -34,22 +34,22 @@
                             </div>
                             <div class="submenu">
                                 <ul>
-                                    <li><a>Internacional</a>
+                                    <li><a href="<?php echo home_url('/regiao/'.'internacional') ?>">Internacional</a>
                                         <ul>
-                                            <li><a href="#">África</a></li>
-                                            <li><a href="#">América</a></li>
-                                            <li><a href="#">Ásia</a></li>
-                                            <li><a href="#">Europa</a></li>
-                                            <li><a href="#">Oceania</a></li>
+                                            <li><a href="<?php echo home_url('/regiao/'.'africa') ?>">África</a></li>
+                                            <li><a href="<?php echo home_url('/regiao/'.'america') ?>">América</a></li>
+                                            <li><a href="<?php echo home_url('/regiao/'.'asia') ?>">Ásia</a></li>
+                                            <li><a href="<?php echo home_url('/regiao/'.'europa') ?>">Europa</a></li>
+                                            <li><a href="<?php echo home_url('/regiao/'.'oceania') ?>">Oceania</a></li>
                                         </ul>
                                     </li>
-                                    <li><a>Nacional</a>
+                                    <li><a href="<?php echo home_url('/regiao/'.'nacional') ?>">Nacional</a>
                                         <ul>
-                                            <li><a href="#">Centro-oeste</a></li>
-                                            <li><a href="#">Nordeste</a></li>
-                                            <li><a href="#">Norte</a></li>
-                                            <li><a href="#">Sul</a></li>
-                                            <li><a href="#">Sudeste</a></li>
+                                            <li><a href="<?php echo home_url('/regiao/'.'centro-oeste') ?>">Centro-oeste</a></li>
+                                            <li><a href="<?php echo home_url('/regiao/'.'nordeste') ?>">Nordeste</a></li>
+                                            <li><a href="<?php echo home_url('/regiao/'.'norte') ?>">Norte</a></li>
+                                            <li><a href="<?php echo home_url('/regiao/'.'sul') ?>">Sul</a></li>
+                                            <li><a href="<?php echo home_url('/regiao/'.'sudeste') ?>">Sudeste</a></li>
                                         </ul>
                                     </li>
                                 </ul>

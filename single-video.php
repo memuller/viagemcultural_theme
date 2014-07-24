@@ -20,7 +20,7 @@ $travel = $post_object->parent();
             </div>
             <div class="entry-description grid_12 alpha omega">
                 <div class="date-info grid_12 alpha">
-                    <span>Programa exibido dia: <time><?php the_('broadcast_date') ?></time></span>
+                    <span>Programa exibido dia: <time><?php echo get_the_('broadcast_date') ?></time></span>
                     <a href="<?php echo $travel->permalink ?>" class="button-blue">Dicas sobre República Tcheca</a>
                 </div>
                 <div class="video-info grid_10">

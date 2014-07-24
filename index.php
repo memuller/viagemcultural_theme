@@ -19,10 +19,10 @@
     <section class="last-trips grid_12">
         <div class="title grid_12 alpha omega">
             <h1>Ultimas Viagens</h1>
-            <a href="#" class="button-blue">Mais viagens</a>
+            <a href="<?php echo home_url('/viagem') ?>" class="button-blue">Mais viagens</a>
         </div>
         <ul class="trips">
-            <?php foreach (array_slice($next_trip->siblings(), 0, 3) as $trip): ?>
+            <?php foreach(\ViagemCultural\Travel::others() as $trip): ?>
                 <?php $video = $trip->children('video'); $video = $video[0]; ?>
                 <li class="trip box shadow grid_4 alpha">
                     <div class="trip-image">
