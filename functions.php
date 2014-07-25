@@ -27,7 +27,7 @@ add_image_size( 'episode_thumbnail', 180, 150 );
        wp_list_pages('title_li=');
     } 
 
-	function get_the($field){
+	function get_the_($field){
 		global $post, $post_object ;
 
 		if($post->post_type == 'page') 
@@ -47,7 +47,7 @@ add_image_size( 'episode_thumbnail', 180, 150 );
 	function the_($field, $editable = false){
 		global $post, $post_object ;
 		$class = '\\ViagemCultural\\' . ucfirst($post->post_type) ;
-		$value = get_the($field);
+		$value = get_the_($field);
 		$editable_when_filled = true ; $empty = false ; 
 		if(!is_single($post->ID)) $editable = false ; 
 		if(!$editable_when_filled && !(($value && !empty($value) )|| intval($value) === 0)) $editable = false ;

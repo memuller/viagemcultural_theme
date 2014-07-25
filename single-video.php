@@ -15,8 +15,7 @@ $travel = $post_object->parent();
         </header>
         <div class="box entry-container grid_12">
             <div class="entry-video grid_12 alpha omega">
-                <?php debug(get_post_meta($post->ID, 'url', true)) ?>
-                <?php echo wp_oembed_get(get_the('url'), array('width' => 940)) ?>
+                <?php echo wp_oembed_get(get_the_('url'), array('width' => 940)) ?>
             </div>
             <div class="entry-description grid_12 alpha omega">
                 <div class="date-info grid_12 alpha">
