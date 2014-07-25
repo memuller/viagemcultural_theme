@@ -81,7 +81,7 @@
                     </li>
                     <li>
                         <span>Assine nosso Feed</span>
-                        <div><a class="feed-button" href="<?php bloginfo('atom_url'); ?>">Assinar</a></div>
+                        <div><a class="feed-button" href="<?php bloginfo('rss2_url'); ?>">Assinar</a></div>
                     </li>
                 </ul>
             </div>

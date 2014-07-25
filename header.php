@@ -34,7 +34,7 @@
                             </div>
                             <div class="submenu">
                                 <ul>
-                                    <li><a href="<?php echo home_url('/regiao/'.'internacional') ?>">Internacional</a>
+                                    <li><span>Internacional</span>
                                         <ul>
                                             <li><a href="<?php echo home_url('/regiao/'.'africa') ?>">África</a></li>
                                             <li><a href="<?php echo home_url('/regiao/'.'america') ?>">América</a></li>
@@ -43,7 +43,7 @@
                                             <li><a href="<?php echo home_url('/regiao/'.'oceania') ?>">Oceania</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="<?php echo home_url('/regiao/'.'nacional') ?>">Nacional</a>
+                                    <li><span>Nacional</span>
                                         <ul>
                                             <li><a href="<?php echo home_url('/regiao/'.'centro-oeste') ?>">Centro-oeste</a></li>
                                             <li><a href="<?php echo home_url('/regiao/'.'nordeste') ?>">Nordeste</a></li>

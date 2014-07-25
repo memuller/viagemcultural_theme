@@ -39,8 +39,8 @@ if(is_tax()){
         </ul>
         <div class="pagination">
             <div class="pagination-buttons">
-                <?php next_posts_link('Dicas mais novas') ?>
-                <?php previous_posts_link('Dicas mais antigas') ?>
+                <?php next_posts_link('Dicas mais antigas') ?>
+                <?php previous_posts_link('Dicas mais novas') ?>
             </div>
         </div>
     </div>

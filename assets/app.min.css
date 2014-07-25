@@ -157,6 +157,14 @@ body {
 .header-content .menu ul li .submenu ul {
   display: block;
 }
+.header-content .menu ul li .submenu ul span {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #006699;
+  font-weight: 300;
+  padding: 5px 10px;
+}
 .header-content .menu ul li:hover {
   background: #006699;
 }
@@ -186,7 +194,7 @@ body {
 .header-content .menu ul li:hover .submenu ul li {
   background: #ffffff;
 }
-.header-content .menu ul li:hover .submenu ul li > a {
+.header-content .menu ul li:hover .submenu ul li > span {
   font-weight: 400;
 }
 .header-content .menu ul li:hover .submenu ul li + li {
@@ -344,6 +352,43 @@ body {
 .social .sharing ul li div iframe {
   margin: 10px 0 0 0;
 }
+.social .sharing ul li .feed-button {
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  color: #666666;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 0 10px;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #ffffff 0%, #f5f5f5 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #f5f5f5));
+  background: -webkit-linear-gradient(top, #ffffff 0%, #f5f5f5 100%);
+  background: -o-linear-gradient(top, #ffffff 0%, #f5f5f5 100%);
+  background: -ms-linear-gradient(top, #ffffff 0%, #f5f5f5 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #f5f5f5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color-1', endColorstr='@color-2', GradientType=0);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  border: 1px solid #cccccc;
+  border-bottom-color: #b3b3b3;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.social .sharing ul li .feed-button:hover {
+  background: #f4f4f4;
+}
 .social .sharing ul li + li {
   border-top: 1px dotted #f3e9ee;
 }
@@ -369,6 +414,9 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0 0 10px 0;
+}
+.container .page p {
+  width: 700px;
 }
 .container .entry-content {
   padding: 30px;
@@ -396,7 +444,6 @@ body {
 }
 .container .entry-content p {
   margin: 0 0 10px 0;
-  width: 700px;
 }
 .container .entry-content ul {
   list-style: square;
@@ -603,6 +650,7 @@ body {
 .container .tip-list .tip article .tip-thumb {
   overflow: hidden;
   height: 200px;
+  position: relative;
 }
 .container .tip-list .tip article .tip-title {
   padding: 20px 0;
