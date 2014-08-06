@@ -14,7 +14,7 @@ if(is_tax()){
         <?php print_r($term_name); ?>
     </div>
     <div class="box container_12">
-        <ul class="tip-list grid_8 alpha">
+        <ul class="tip-list grid_8">
             <?php while (have_posts()) : the_post();
                 $travel = new \ViagemCultural\Travel($post); 
                 $video = $travel->videos(); if($video) $video = $video[0];  
@@ -37,6 +37,7 @@ if(is_tax()){
                 </li>
             <?php endwhile; ?>
         </ul>
+		<?php get_template_part('sidebar', 'archive'); ?>
         <div class="pagination">
             <div class="pagination-buttons">
                 <?php next_posts_link('Dicas mais antigas') ?>

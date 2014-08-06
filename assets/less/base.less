@@ -567,6 +567,44 @@ body {
             }
         }
     }
+	.sidebar-archive {
+		h2 {
+			font-size: 20px;
+			text-transform: uppercase;
+			color: @blue;
+		}
+		select {
+			font-size: 14px;
+			line-height: 30px;
+			color: @blue;
+			text-transform: uppercase;
+			border: 2px solid @blue;
+			padding: 0 10px;
+			width: 80%;
+			background: transparent;
+			-webkit-appearance: none;
+			.border-radius(3px);
+			&:first-child {
+				margin: 20px 0;
+			}
+			&:last-child {
+				margin: 0;
+			}
+		}
+		input[type="button"] {
+			font-size: 14px;
+    		line-height: 25px;
+    		color: #ffffff;
+    		text-decoration: none;
+    		text-transform: uppercase;
+    		padding: 0 10px;
+    		border: 0;
+    		.border-radius(3px);
+    		display: block;
+    		background: @blue;
+			margin: 10px 0 0 0;
+		}
+	}
     // Episode content
     .date-info {
         font-size: 20px;
@@ -586,7 +624,6 @@ body {
     // Tip list
     .tip-list {
         padding: 30px 0;
-        margin-left: 30px;
         .tip {
             article {
                 width: 100%;

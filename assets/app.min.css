@@ -614,6 +614,46 @@ body {
 .container aside ul li + li {
   margin-top: 20px;
 }
+.container .sidebar-archive h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #1278ad;
+}
+.container .sidebar-archive select {
+  font-size: 14px;
+  line-height: 30px;
+  color: #1278ad;
+  text-transform: uppercase;
+  border: 2px solid #1278ad;
+  padding: 0 10px;
+  width: 80%;
+  background: transparent;
+  -webkit-appearance: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.container .sidebar-archive select:first-child {
+  margin: 20px 0;
+}
+.container .sidebar-archive select:last-child {
+  margin: 0;
+}
+.container .sidebar-archive input[type="button"] {
+  font-size: 14px;
+  line-height: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 10px;
+  border: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: block;
+  background: #1278ad;
+  margin: 10px 0 0 0;
+}
 .container .date-info {
   font-size: 20px;
   text-transform: uppercase;
@@ -631,7 +671,6 @@ body {
 }
 .container .tip-list {
   padding: 30px 0;
-  margin-left: 30px;
 }
 .container .tip-list .tip article {
   width: 100%;
