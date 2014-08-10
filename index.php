@@ -23,7 +23,7 @@
         </div>
         <ul class="trips">
             <?php foreach(\ViagemCultural\Travel::others() as $trip): ?>
-                <?php $video = $trip->children('video'); $video = $video[0]; ?>
+                <?php $video = $trip->children('video'); if($video) $video = $video[0]; ?>
                 <li class="trip box shadow grid_4 alpha">
                     <div class="trip-image">
                         <?php echo get_the_post_thumbnail($trip->ID, 'tip_thumbnail', array('class' => 'scale', 'data-scale' => 'best-fill', 'data-align' => 'center')) ?>
@@ -31,7 +31,9 @@
                     <div class="trip-info">
                         <h2><?php echo $trip->title ?></h2>
                         <a href="<?php echo $trip->permalink ?>" class="button-white more">Saiba mais</a>
-                        <a href="<?php echo $video->permalink ?>" class="button-white watch">Assistir o programa</a>
+                        <?php if($video): ?>
+                            <a href="<?php echo $video->permalink ?>" class="button-white watch">Assistir o programa</a>
+                        <?php endif; ?>
                     </div>
                 </li>
             <?php endforeach; ?>
