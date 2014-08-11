@@ -28,7 +28,7 @@ module.exports = function(grunt) {
           join: true
         },
         files: {
-          'assets/main.min.js': ['coffee/*.coffee']
+          'assets/main.min.js': ['assets/coffee/*.coffee']
         }
       }
     },
@@ -38,10 +38,14 @@ module.exports = function(grunt) {
         files: ['assets/less/*.less'],
         tasks: ['less']
       },
+      coffee: {
+        files: ['assets/coffee/*.coffee'],
+        tasks: ['coffee']
+      },
       prepare:{
         options: { spawn: false },
         files: ['assets/app.min.css', 'assets/main.min.css', 'assets/main.min.js'],
-        tasks: ['cssmin', 'coffee', 'version', 'notify:ready']
+        tasks: ['cssmin', 'version', 'notify:ready']
       }
     },
 
