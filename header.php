@@ -11,7 +11,7 @@
     <script src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/image-scale.min.js"></script>
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class() ?>>
     <header class="header">
         <nav class="redetv-bar">
             <div class="container_12">
