@@ -4,11 +4,12 @@
         <img src="<?php bloginfo('stylesheet_directory'); ?>/images/temporary/advertising.png"/>
     </section>
     <section class="related">
-        <?php if (!$post_object->next): ?>
+        <?php $videos = $post_object->children('video') ?>
+        <?php if (!$post_object->next && !empty($videos) ): ?>
             <div class="episode grid_4 alpha omega">
                 <h1>Assista o Episódio</h1>
                 <ul class="clearfix">
-                    <?php foreach ($post_object->children('video') as $video): ?>
+                    <?php foreach ($videos as $video): ?>
                         <li class="grid_4 alpha omega">
                             <a href="<?php echo $video->permalink ?>">
                                 <div class="episode-image clearfix">
