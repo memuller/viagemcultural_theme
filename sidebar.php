@@ -26,24 +26,14 @@
         <div class="related-tips grid_4 alpha omega">
             <h1>Veja outras dicas</h1>
             <ul class="clearfix">
+            <?php foreach ($post_object->related() as $related): ?>
                 <li class="grid_4 alpha omega">
-                    <a href="#">
-                        <img class="grid_2 alpha" src=""/>
-                        <h2 class="grid_2 omega">Lorem Ipsum</h2>
+                    <a href="<?php echo $related->permalink ?>">
+                        <?php echo get_the_post_thumbnail($related->ID, 'sidebar_thumbnail', array('class' => 'grid_2 alpha')) ?>
+                        <h2 class="grid_2 omega"><?php echo $related->title ?></h2>
                     </a>
-                </li>
-                <li class="grid_4 alpha omega">
-                    <a href="#">
-                        <img class="grid_2 alpha" src=""/>
-                        <h2 class="grid_2 omega">Lorem Ipsum</h2>
-                    </a>
-                </li>
-                <li class="grid_4 alpha omega">
-                    <a href="#">
-                        <img class="grid_2 alpha" src=""/>
-                        <h2 class="grid_2 omega">Lorem Ipsum</h2>
-                    </a>
-                </li>
+                </li>                
+            <?php endforeach ?>
             </ul>
         </div>
     </section>
