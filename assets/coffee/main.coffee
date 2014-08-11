@@ -1,0 +1,3 @@
+(($) ->
+	$('img.scale').imageScale()
+) jQuery
