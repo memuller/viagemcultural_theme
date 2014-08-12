@@ -9,7 +9,7 @@ $travel = $post_object->parent();
 ?>
 
 <section class="container container_12">
-    <article>
+    <article class="clearfix">
         <header class="entry-title grid_8">
             <h1><?php the_title() ?></h1>
         </header>
