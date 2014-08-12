@@ -8,24 +8,6 @@ add_image_size( 'tip_thumbnail', 300, 250 );
 add_image_size( 'sidebar_thumbnail', 140, 100 );
 add_image_size( 'episode_thumbnail', 180, 150 );
 
-    function custom_nav_menu()
-    {
-        $options = array(
-            'echo' => false,
-            'container' => false,
-            'theme_location' => 'primary',
-            'fallback_cb'=> false,
-            'order' => false
-        );
-        $menu = wp_nav_menu($options);
-        echo preg_replace(array(
-            '#^<ul[^>]*>#',
-            '#</ul>$#'
-        ), '', $menu);
-    }
-    function default_page_menu() {
-       wp_list_pages('title_li=');
-    } 
 
 	function get_the_($field){
 		global $post, $post_object ;

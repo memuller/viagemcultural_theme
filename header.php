@@ -73,7 +73,7 @@
                                 </ul>
                             </div>
 						</li>
-                        <?php custom_nav_menu(array('menu' => 'main')); ?>
+                        <?php wp_nav_menu( array( 'items_wrap' => '%3$s', 'container' => false, 'sort_column' => 'menu_order' ) ); ?>
                     </ul>
                 </nav>
             </div>
