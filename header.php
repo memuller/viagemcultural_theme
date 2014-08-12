@@ -15,6 +15,7 @@
         <nav class="redetv-bar">
             <div class="container_12">
                 <a class="redetv-brand grid_2 alpha" href="http://www.redetv.uol.com.br/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/redetv.png"></a>
+				<span>Todos os domingos às 18h30 para todo o Brasil!</span>
             </div>
         </nav>
         <section class="header-content">
@@ -27,7 +28,7 @@
                 <nav class="menu clearfix">
                     <ul>
                         <li><a href="<?php bloginfo('url'); ?>">Inicío</a></li>
-                        <li><a>Dicas de viagem</a>
+                        <li class="region"><span>Dicas de viagem</span>
                             <div class="spacing-arrow">
                                 <div class="top-arrow"></div>
                             </div>
@@ -42,22 +43,37 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="menu-episodes"><a>Episódios</a>
-                            <div class="spacing-arrow">
+                        <li class="videos"><span>Vídeos</span>
+							<div class="spacing-arrow">
                                 <div class="top-arrow"></div>
                             </div>
                             <div class="submenu">
                                 <ul>
                                     <li>
-										<a href="<?php echo home_url('/videos') ?>"><span>Programa completo</span></a>
+										<a href="<?php echo home_url('/videos/'.'programa-completo') ?>"><span>Programa Completo</span></a>
 									</li>
                                     <li>
-										<a href="<?php echo home_url('/videos') ?>"><span>Melhores momentos</span></a>
+										<a href="<?php echo home_url('/videos/'.'melhores-momentos') ?>"><span>Melhores momentos</span></a>
                                     </li>
                                 </ul>
                             </div>
-                        </li>
-                        <?php custom_nav_menu(); ?>
+						</li>
+						<li class="about"><span>O Programa</span>
+							<div class="spacing-arrow">
+                                <div class="top-arrow"></div>
+                            </div>
+                            <div class="submenu">
+                                <ul>
+                                    <li>
+										<a href="<?php echo home_url('/sobre') ?>"><span>Sobre o programa</span></a>
+									</li>
+                                    <li>
+										<a href="<?php echo home_url('/apresentador') ?>"><span>O Apresentador</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+						</li>
+                        <?php custom_nav_menu(array('menu' => 'main')); ?>
                     </ul>
                 </nav>
             </div>

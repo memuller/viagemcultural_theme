@@ -14,7 +14,7 @@ add_image_size( 'episode_thumbnail', 180, 150 );
             'echo' => false,
             'container' => false,
             'theme_location' => 'primary',
-            'fallback_cb'=> 'default_page_menu',
+            'fallback_cb'=> false,
             'order' => false
         );
         $menu = wp_nav_menu($options);

@@ -58,7 +58,7 @@ body {
 .redetv-bar {
     background: @gray-light;
     color: #ffffff;
-    height: 30px;
+    height: 35px;
     border-bottom: 2px solid @gray;
     .redetv-brand {
         text-align: center;
@@ -67,31 +67,23 @@ body {
         height: 40px;
         display: block;
     }
-    .redetv-menu {
-        text-transform: uppercase;
-        margin: 4px 0 0 0;
-        li {
-            float: left;
-            a {
-                color: #ffffff;
-                text-decoration: none;
-                font-weight: 300;
-                line-height: 20px;
-                padding: 0 10px;
-            }
-        }
-    }
+    span {
+		font-size: 18px;
+		line-height: 33px;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
 }
 .header-content {
     height: 187px;
     background: @blue-light url(../images/background_header.png) no-repeat center top;
-    padding: 10px 0 0 0;
+    padding: 5px 0 0 0;
     .brand {
-        margin-top: 40px;
+        margin-top: 35px;
     }
     .menu {
         min-width: 400px;
-        margin: 0 auto;
+        margin: 10px auto 0;
         display: block;
         ul {
             margin-left:auto;
@@ -112,6 +104,14 @@ body {
                     font-weight: 300;
                     padding: 5px 10px;
                 }
+				& > span {
+					font-size: 16px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: @blue-dark;
+                    font-weight: 300;
+                    padding: 5px 10px;
+				}
                 .spacing-arrow {
                     display: none;
                     position: absolute;
@@ -134,19 +134,27 @@ body {
                     .all-transition(200ms);
                     ul {
                         display: block;
-                        span {
-                            font-size: 16px;
-                            text-transform: uppercase;
-                            text-decoration: none;
-                            color: @blue-dark;
-                            font-weight: 300;
-                            padding: 5px 10px;
-                        }
+						li {
+							width: 100%;
+							display: block;
+							text-align: center;
+							a {
+								span {
+                            		font-size: 16px;
+                            		text-transform: uppercase;
+                            		text-decoration: none;
+                            		color: @blue-dark;
+                            		font-weight: 300;
+                            		padding: 5px 10px;
+                        		}
+							}
+						}
                     }
                 }
                 &:hover {
                     background: @blue-dark;
-                    a {
+                    & > span,
+					a {
                         color: #ffffff; 
                     }
                     .spacing-arrow {
@@ -159,9 +167,9 @@ body {
                         display: block;
                         position: absolute;
                         top: 45px;
-                        right: -17px;
                         background: #ffffff;
-                        padding: 10px 20px;
+                        padding: 10px 10px;
+						.shadow(0.2);
                         .border-radius(3px);
                         ul {
                             background: #ffffff;
@@ -211,10 +219,50 @@ body {
                     margin-left: 10px;
                 }
             }
+			.region {
+				.submenu {
+					right: -15px;
+				}
+			}
+			.videos {
+				.spacing-arrow {
+					padding: 5px 25px 0 25px!important;
+				}
+				.submenu {
+					right: -70px;
+					ul {
+						li {
+							a {
+								width: 190px!important;
+								display: block!important;
+								margin: 0!important;
+								text-align: center!important;
+							}
+						}
+					}
+				}
+			}
+			.about {
+				.spacing-arrow {
+					padding: 5px 45px 0 45px!important;
+				}
+				.submenu {
+					right: -45px;
+					ul {
+						li {
+							a {
+								width: 175px!important;
+								display: block!important;
+								margin: 0!important;
+								text-align: center!important;
+							}
+						}
+					}
+				}
+			}
         }
     }
 }
-
 .next-trip {
     height: 410px;
     overflow: hidden;
@@ -253,7 +301,6 @@ body {
         }
     }
 }
-
 .last-trips {
     .title {
         margin-bottom: 20px;
@@ -278,7 +325,7 @@ body {
             position: relative;
         }
         .trip-info {
-            height: 160px;
+            height: 140px;
             background: @blue;
             position: relative;
             h2 {
@@ -298,7 +345,6 @@ body {
         }
     }
 }
-
 .social {
     border-top: 1px solid @blue;
     margin-top: 50px;
@@ -655,7 +701,7 @@ body {
             }
         }
         li + li {
-            border-top: 1px solid @gray-light;
+            border-top: 1px solid @gray-lighter;
             padding-top: 20px;
             margin-top: 20px;
         }
@@ -696,7 +742,7 @@ body {
             & + li {
                 margin-top: 15px;
                 padding-top: 15px;
-                border-top: 1px solid @gray;
+                border-top: 1px solid @gray-lighter;
             }
             .episode-image {
                 height: 150px;

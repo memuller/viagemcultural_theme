@@ -18,7 +18,7 @@
 
     <section class="last-trips grid_12">
         <div class="title grid_12 alpha omega">
-            <h1>Ultimas Viagens</h1>
+            <h1>Últimas Viagens</h1>
             <a href="<?php echo home_url('/viagem') ?>" class="button-blue">Mais viagens</a>
         </div>
         <ul class="trips">

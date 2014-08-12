@@ -54,8 +54,8 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Source Sans Pro', sans-serif;
-  background-image: -webkit-linear-gradient(-225deg, #f3e9ee 0%, #c3deea 100%);
-  background-image: linear-gradient(-45deg, #f3e9ee 0%, #c3deea 100%);
+  background-image: -webkit-linear-gradient(-225deg, #efefef 0%, #c3deea 100%);
+  background-image: linear-gradient(-45deg, #efefef 0%, #c3deea 100%);
   background-repeat: no-repeat;
 }
 .header {
@@ -65,7 +65,7 @@ body {
 .redetv-bar {
   background: #aeaeae;
   color: #ffffff;
-  height: 30px;
+  height: 35px;
   border-bottom: 2px solid #8d8d8d;
 }
 .redetv-bar .redetv-brand {
@@ -75,31 +75,23 @@ body {
   height: 40px;
   display: block;
 }
-.redetv-bar .redetv-menu {
-  text-transform: uppercase;
-  margin: 4px 0 0 0;
-}
-.redetv-bar .redetv-menu li {
-  float: left;
-}
-.redetv-bar .redetv-menu li a {
-  color: #ffffff;
-  text-decoration: none;
+.redetv-bar span {
+  font-size: 18px;
+  line-height: 33px;
   font-weight: 300;
-  line-height: 20px;
-  padding: 0 10px;
+  text-transform: uppercase;
 }
 .header-content {
   height: 187px;
   background: #6699cc url(../images/background_header.png) no-repeat center top;
-  padding: 10px 0 0 0;
+  padding: 5px 0 0 0;
 }
 .header-content .brand {
-  margin-top: 40px;
+  margin-top: 35px;
 }
 .header-content .menu {
   min-width: 400px;
-  margin: 0 auto;
+  margin: 10px auto 0;
   display: block;
 }
 .header-content .menu ul {
@@ -122,6 +114,14 @@ body {
   position: relative;
 }
 .header-content .menu ul li a {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #006699;
+  font-weight: 300;
+  padding: 5px 10px;
+}
+.header-content .menu ul li > span {
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
@@ -157,7 +157,12 @@ body {
 .header-content .menu ul li .submenu ul {
   display: block;
 }
-.header-content .menu ul li .submenu ul span {
+.header-content .menu ul li .submenu ul li {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.header-content .menu ul li .submenu ul li a span {
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
@@ -168,6 +173,7 @@ body {
 .header-content .menu ul li:hover {
   background: #006699;
 }
+.header-content .menu ul li:hover > span,
 .header-content .menu ul li:hover a {
   color: #ffffff;
 }
@@ -181,9 +187,10 @@ body {
   display: block;
   position: absolute;
   top: 45px;
-  right: -17px;
   background: #ffffff;
-  padding: 10px 20px;
+  padding: 10px 10px;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -232,6 +239,33 @@ body {
 }
 .header-content .menu ul li + li {
   margin-left: 10px;
+}
+.header-content .menu ul .region .submenu {
+  right: -15px;
+}
+.header-content .menu ul .videos .spacing-arrow {
+  padding: 5px 25px 0 25px!important;
+}
+.header-content .menu ul .videos .submenu {
+  right: -70px;
+}
+.header-content .menu ul .videos .submenu ul li a {
+  width: 190px!important;
+  display: block!important;
+  margin: 0!important;
+  text-align: center!important;
+}
+.header-content .menu ul .about .spacing-arrow {
+  padding: 5px 45px 0 45px!important;
+}
+.header-content .menu ul .about .submenu {
+  right: -45px;
+}
+.header-content .menu ul .about .submenu ul li a {
+  width: 175px!important;
+  display: block!important;
+  margin: 0!important;
+  text-align: center!important;
 }
 .next-trip {
   height: 410px;
@@ -295,7 +329,7 @@ body {
   position: relative;
 }
 .last-trips .trip .trip-info {
-  height: 160px;
+  height: 140px;
   background: #1278ad;
   position: relative;
 }
@@ -390,7 +424,7 @@ body {
   background: #f4f4f4;
 }
 .social .sharing ul li + li {
-  border-top: 1px dotted #f3e9ee;
+  border-top: 1px dotted #efefef;
 }
 .footer {
   background: #8d8d8d;
@@ -705,7 +739,7 @@ body {
   margin-right: 20px;
 }
 .container .tip-list li + li {
-  border-top: 1px solid #aeaeae;
+  border-top: 1px solid #efefef;
   padding-top: 20px;
   margin-top: 20px;
 }
@@ -768,7 +802,7 @@ body {
 .container .episodes .episode + li {
   margin-top: 15px;
   padding-top: 15px;
-  border-top: 1px solid #8d8d8d;
+  border-top: 1px solid #efefef;
 }
 .container .episodes .episode .episode-image {
   height: 150px;
