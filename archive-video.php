@@ -2,7 +2,7 @@
 /*
 Template Name: Lista videos
 */
-get_header(); ?>
+get_header(); global $posts; ?>
 
 <section class="container">
     <div class="container_12">
@@ -10,7 +10,7 @@ get_header(); ?>
     </div>
     <div class="box container_12">
         <ul class="episodes clearfix">
-            <?php while (have_posts()) : the_post(); $video = new \ViagemCultural\Video($post); $travel = $video->parent();  ?>
+            <?php foreach ($posts as $post) { setup_postdata($post); $video = new \ViagemCultural\Video($post); $travel = $video->parent();  ?>
                 <li class="episode grid_11 alpha omega">
                     <div class="episode-image">
                         <?php echo get_the_post_thumbnail($post->ID, 'episode_thumbnail', array('class' => 'scale', 'data-scale' => 'best-fill', 'data-align' => 'center')) ?>
@@ -27,7 +27,7 @@ get_header(); ?>
                         </div>
                     </div>
                 </li>
-            <?php endwhile; ?>
+            <?php } ?>
         </ul>
         <div class="pagination">
             <div class="pagination-buttons">
