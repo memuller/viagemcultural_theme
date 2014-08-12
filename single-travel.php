@@ -23,6 +23,7 @@ global $post, $post_object; $post_object = new \ViagemCultural\Travel($post);
                     <?php get_sidebar();?>
                 </div>
             </article>
+			<?php comments_template(); ?>
         <?php endwhile; ?>
     <?php endif; ?>
 </section>
