@@ -9,6 +9,9 @@ if(is_tax()){
 }
 ?>
 <section class="container">
+	<div class="advertising">
+		<img src="">
+	</div>
     <div class="container_12">
         <h1 class="grid_8">Dicas de Viagem <?php if(isset($title)) echo " - ".$title; ?></h1>
         <?php print_r($term_name); ?>

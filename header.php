@@ -42,7 +42,21 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="<?php bloginfo('url'); ?>/videos">Episódios</a></li>
+                        <li class="menu-episodes"><a>Episódios</a>
+                            <div class="spacing-arrow">
+                                <div class="top-arrow"></div>
+                            </div>
+                            <div class="submenu">
+                                <ul>
+                                    <li>
+										<a href="<?php echo home_url('/videos') ?>"><span>Programa completo</span></a>
+									</li>
+                                    <li>
+										<a href="<?php echo home_url('/videos') ?>"><span>Melhores momentos</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                         <?php custom_nav_menu(); ?>
                     </ul>
                 </nav>
