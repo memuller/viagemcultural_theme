@@ -55,4 +55,36 @@ add_image_size( 'episode_thumbnail', 180, 150 );
 		
 	}
 
+	function my_login_logo() { ?>
+	<style>
+		body.login div#login h1 a {
+			width: 250px;
+			height: 95px;
+			margin: 0 auto;
+			padding-bottom: 30px;
+			background: url(<?php bloginfo( 'stylesheet_directory' ); ?>/images/viagemcultural.png) no-repeat;
+			display: block;
+		}
+		body.login {
+			background-image: -webkit-linear-gradient(-225deg, #efefef 0%, #c3deea 100%);
+			background-image: linear-gradient(-45deg, #efefef 0%, #c3deea 100%);
+			background-repeat: no-repeat;
+		}
+	</style>
+	<?php }
+	add_action( 'login_enqueue_scripts', 'my_login_logo' );
+	
+	function my_login_logo_url() {
+		return get_bloginfo( 'url' );
+	}
+	add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+	function my_login_logo_url_title() {
+		return 'Your Site Name and Info';
+	}
+	add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+	function remove_footer_admin () {
+	echo 'Desenvolvido por <a href="mailto:hello@memuller.com">Matheus Muller</a> (Back-end) e <a href="mailto:contato@thiagozucareli.com">Thiago Zucareli</a> (Interface/Front-end)';
+	}
+	add_filter('admin_footer_text', 'remove_footer_admin');
 ?>
