@@ -1,8 +1,9 @@
 <?php global $post_object, $post; ?>
 <aside class="grid_4 alpha omega">
+<!--
     <section class="advertising">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/temporary/advertising.png"/>
     </section>
+-->
     <section class="related">
         <?php $videos = $post_object->children('video') ?>
         <?php if (!$post_object->next && !empty($videos) ): ?>

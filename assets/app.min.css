@@ -601,8 +601,8 @@ body {
 .container aside h1 {
   font-size: 20px;
 }
-.container aside .related-tips {
-  margin-top: 30px;
+.container aside .episode {
+  margin-bottom: 30px;
 }
 .container aside .advertising {
   margin-bottom: 30px;
