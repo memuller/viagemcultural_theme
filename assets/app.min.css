@@ -76,7 +76,7 @@ body {
   display: block;
 }
 .redetv-bar span {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 33px;
   font-weight: 400;
   text-transform: uppercase;
@@ -490,15 +490,18 @@ body {
   font-weight: 600;
   margin: 20px 0 10px;
 }
+.container .page,
+.container .entry-content {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+}
 .container .page p,
 .container .entry-content p,
 .container .page ul,
 .container .entry-content ul {
+  line-height: 1.4;
   font-weight: 300;
-  line-height: 1.2;
-  letter-spacing: 1px;
   word-spacing: 1px;
-  color: #666666;
 }
 .container .page strong,
 .container .entry-content strong {
@@ -528,6 +531,16 @@ body {
 .container .page img,
 .container .entry-content img {
   margin: 10px 0;
+}
+.container .page img.alignleft,
+.container .entry-content img.alignleft {
+  float: left;
+  padding: 0 10px 0 0;
+}
+.container .page img.alignright,
+.container .entry-content img.alignright {
+  float: right;
+  padding: 0 0 0 10px;
 }
 .container .page ul,
 .container .entry-content ul,
@@ -669,6 +682,7 @@ body {
 }
 .container .page blockquote,
 .container .entry-content blockquote {
+  font-style: italic;
   margin: 20px 0 20px 10px;
   display: inline-block;
 }
