@@ -274,6 +274,9 @@ body {
   margin-bottom: 50px;
   position: relative;
 }
+.next-trip .next-trip-image {
+  height: 100%;
+}
 .next-trip .next-trip-info {
   height: 410px;
   padding: 250px 0 0 0;
@@ -339,32 +342,35 @@ body {
   float: left;
   margin: 5px 0 0 20px;
 }
-.last-trips .trip {
+.last-trips .trips .trip {
   overflow: hidden;
 }
-.last-trips .trip .trip-image {
+.last-trips .trips .trip .trip-image {
   height: 200px;
   overflow: hidden;
   position: relative;
 }
-.last-trips .trip .trip-info {
+.last-trips .trips .trip .trip-info {
   height: 140px;
   background: #1278ad;
   position: relative;
 }
-.last-trips .trip .trip-info h2 {
+.last-trips .trips .trip .trip-info h2 {
   font-size: 25px;
   color: #ffffff;
   text-transform: uppercase;
   padding: 20px 15px;
 }
-.last-trips .trip .trip-info .button-white {
+.last-trips .trips .trip .trip-info .button-white {
   margin: 0 0 0 15px;
   position: absolute;
   bottom: 15px;
 }
-.last-trips .trip .trip-info .watch {
+.last-trips .trips .trip .trip-info .watch {
   right: 15px;
+}
+.last-trips .trips li + li {
+  margin: 0 0 0 20px;
 }
 .social {
   border-top: 1px solid #1278ad;
@@ -525,6 +531,104 @@ body {
 .container .contact-entry p strong {
   font-weight: 600;
 }
+.container .contact-entry ul,
+.container .contact-entry ol {
+  margin: 0 0 24px;
+  line-height: 1.714285714;
+  padding: 0;
+}
+.container .contact-entry ul {
+  list-style: disc outside;
+}
+.container .contact-entry ol {
+  list-style: decimal outside;
+}
+.container .contact-entry ul ul,
+.container .contact-entry ol ol,
+.container .contact-entry ul ol,
+.container .contact-entry ol ul {
+  margin-bottom: 0;
+}
+.container .contact-entry li {
+  margin: 0 0 0 24px;
+}
+.container .contact-entry dl {
+  margin: 0 24px;
+  margin: 0 1.714285714rem;
+}
+.container .contact-entry dt {
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.container .contact-entry dd {
+  line-height: 1.714285714;
+  margin: 0 0 24px;
+}
+.container .contact-entry strong {
+  font-weight: bold;
+}
+.container .contact-entry cite,
+.container .contact-entry em,
+.container .contact-entry i {
+  font-style: italic;
+}
+.container .contact-entry cite {
+  border: none;
+}
+.container .contact-entry big {
+  font-size: 128.571429%;
+}
+.container .contact-entry pre {
+  border: 1px solid #ededed;
+  color: #666;
+  font-family: Consolas, Monaco, Lucida Console, monospace;
+  font-size: 12px;
+  line-height: 1.714285714;
+  margin: 24px 0;
+  overflow: auto;
+  padding: 24px;
+}
+.container .contact-entry code,
+.container .contact-entry kbd,
+.container .contact-entry samp,
+.container .contact-entry var {
+  font-family: Consolas, Monaco, Lucida Console, monospace;
+  font-size: 12px;
+  line-height: 2;
+}
+.container .contact-entry abbr,
+.container .contact-entry acronym,
+.container .contact-entry dfn {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+.container .contact-entry address {
+  display: block;
+  line-height: 1.714285714;
+  margin: 0 0 24px;
+}
+.container .contact-entry del {
+  color: #333;
+}
+.container .contact-entry ins {
+  background: #fff9c0;
+  border: none;
+  color: #333;
+  text-decoration: none;
+}
+.container .contact-entry sup,
+.container .contact-entry sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.container .contact-entry sup {
+  top: -0.5em;
+}
+.container .contact-entry sub {
+  bottom: -0.25em;
+}
 .container .contact-entry .wpcf7 {
   width: 450px;
   height: 538px;
@@ -623,11 +727,9 @@ body {
 }
 .container aside ul li a .episode-image {
   width: 140px;
+  height: 100px;
   position: relative;
   float: left;
-}
-.container aside ul li a .episode-image img {
-  height: 100px;
 }
 .container aside ul li a .episode-image .play {
   width: 52px;
@@ -863,5 +965,32 @@ body {
 }
 .container .episodes .episode .episode-info .buttons span span {
   margin: 0;
+}
+.container .error {
+  padding: 100px 30px;
+}
+.container .error h1 {
+  font-size: 50px;
+  line-height: 1.5;
+}
+.container .error h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #8d8d8d;
+  padding: 0 0 30px 0;
+}
+.container .error span {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666666;
+  width: 100%;
+  display: block;
+}
+.container .error span a {
+  color: #1278ad;
+  text-decoration: none;
+}
+.container .error .button-blue {
+  margin: 30px 0 0 0;
 }
 

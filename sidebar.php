@@ -1,9 +1,16 @@
 <?php global $post_object, $post; ?>
 <aside class="grid_4 alpha omega">
-<!--
     <section class="advertising">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- Viagem Cultural Sidebar -->
+		<ins class="adsbygoogle"
+			 style="display:inline-block;width:300px;height:250px"
+			 data-ad-client="ca-pub-5125580832355198"
+			 data-ad-slot="6384348260"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
     </section>
--->
     <section class="related">
         <?php $videos = $post_object->children('video') ?>
         <?php if (!$post_object->next && !empty($videos) ): ?>
