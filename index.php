@@ -24,7 +24,7 @@
         <ul class="trips">
             <?php foreach(\ViagemCultural\Travel::others() as $trip): ?>
                 <?php $video = $trip->children('video'); if($video) $video = $video[0]; ?>
-                <li class="trip box shadow grid_4 alpha">
+                <li class="trip box shadow grid_4 alpha omega">
                     <div class="trip-image">
                         <?php echo get_the_post_thumbnail($trip->ID, 'tip_thumbnail', array('class' => 'scale', 'data-scale' => 'best-fill', 'data-align' => 'center')) ?>
                     </div>

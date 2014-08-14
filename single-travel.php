@@ -19,9 +19,11 @@ global $post, $post_object; $post_object = new \ViagemCultural\Travel($post);
                         <?php else: ?>
                             <?php the_content() ?>
                         <?php endif; ?>
-						<?php comments_template(); ?>
                     </div>
                     <?php get_sidebar();?>
+					<div class="entry-comments grid_8 alpha omega">
+						<?php comments_template(); ?>
+					</div>
                 </div>
             </article>
         <?php endwhile; ?>

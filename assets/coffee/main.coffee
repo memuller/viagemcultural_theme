@@ -1,5 +1,5 @@
 (($) ->
 	$('img.scale').imageScale({
-			scale: 'best-fill'
+			debug: 3
 		});
 ) jQuery

@@ -269,6 +269,9 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
     position: relative;
+	.next-trip-image {
+		height: 100%;
+	}
     .next-trip-info {
         height: 410px;
 		padding: 250px 0 0 0;
@@ -332,33 +335,38 @@ body {
             margin: 5px 0 0 20px;
         }
     }
-    .trip {
-        overflow: hidden;
-        .trip-image {
-            height: 200px;
-            overflow: hidden;
-            position: relative;
-        }
-        .trip-info {
-            height: 140px;
-            background: @blue;
-            position: relative;
-            h2 {
-                font-size: 25px;
-                color: #ffffff;
-                text-transform: uppercase;
-                padding: 20px 15px;
-            }
-            .button-white {
-                margin: 0 0 0 15px;
-                position: absolute;
-                bottom: 15px;
-            }  
-            .watch {
-                right: 15px;
-            }
-        }
-    }
+	.trips {
+		.trip {
+			overflow: hidden;
+			.trip-image {
+				height: 200px;
+				overflow: hidden;
+				position: relative;
+			}
+			.trip-info {
+				height: 140px;
+				background: @blue;
+				position: relative;
+				h2 {
+					font-size: 25px;
+					color: #ffffff;
+					text-transform: uppercase;
+					padding: 20px 15px;
+				}
+				.button-white {
+					margin: 0 0 0 15px;
+					position: absolute;
+					bottom: 15px;
+				}  
+				.watch {
+					right: 15px;
+				}
+			}
+		}
+		li + li {
+			margin: 0 0 0 20px;
+		}
+	}
 }
 .social {
     border-top: 1px solid @blue;
@@ -469,7 +477,10 @@ body {
             font-weight: 600;
             margin: 20px 0 10px;
         }
-        p,
+    }
+	.page,
+	.entry-content {
+		p,
         ul {
             font-weight: 300;
             line-height: 1.2;
@@ -482,21 +493,149 @@ body {
         }
         a {
             color: @gray-dark;
+			text-decoration: underline;
         }
         p {
             margin: 0 0 10px 0;
         }
-        ul {
-            list-style: square;
-            padding: 0 0 0 20px;
-            margin: 20px 0;
-            li {
-                & + li {
-                    margin: 10px 0 0 0;
-                }
+		p {
+            margin: 10px 0;
+            a {
+                color: @blue;
+            }
+            strong {
+                font-weight: 600;
             }
         }
-    }
+		img {
+			margin: 10px 0;
+		}
+		ul,
+		ol {
+			margin: 10px 0;
+			line-height: 1.5;
+			padding: 0 0 0 30px;
+			li {
+                & + li {
+                    margin: 5px 0 0 0;
+                }
+				ul {
+					margin: 5px 0 0 0;
+				}
+            }
+		}
+		ul {
+			list-style: disc outside;
+		}
+		ol {
+			list-style: decimal outside;
+		}
+		ul ul,
+		ol ol,
+		ul ol,
+		ol ul {
+			margin-bottom: 0;
+		}
+		dl {
+			margin: 0 20px;
+		}
+		dt {
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		dd {
+			line-height: 1.5;
+			margin: 0 0 20px;
+		}
+		strong {
+			font-weight: bold;
+		}
+		cite,
+		em,
+		i {
+			font-style: italic;
+		}
+		cite {
+			border: none;
+		}
+		big {
+			font-size: 120%;
+		}
+		pre {
+			border: 1px solid #ededed;
+			color: #666;
+			font-family: Consolas, Monaco, Lucida Console, monospace;
+			font-size: 12px;
+			line-height: 1.714285714;
+			margin: 24px 0;
+			overflow: auto;
+			padding: 24px;
+		}
+		code,
+		kbd,
+		samp,
+		var {
+			font-family: Consolas, Monaco, Lucida Console, monospace;
+			font-size: 12px;
+			line-height: 2;
+		}
+		abbr,
+		acronym,
+		dfn {
+			border-bottom: 1px dotted #666;
+			cursor: help;
+		}
+		address {
+			display: block;
+			line-height: 1.5;
+			margin: 0 0 24px;
+		}
+		del {
+			color: #333;
+		}
+		ins {
+			background: #fff9c0;
+			border: none;
+			color: #333;
+			text-decoration: none;
+		}
+		sup,
+		sub {
+			font-size: 75%;
+			line-height: 0;
+			position: relative;
+			vertical-align: baseline;
+		}
+		sup {
+			top: -0.5em;
+		}
+		sub {
+			bottom: -0.25em;
+		}
+		blockquote {
+			margin: 20px 0 20px 10px;
+			display: inline-block;
+			p {
+				padding: 0 0 0 10px;
+				margin: 0 0 0 10px;
+				border-left: 1px solid @gray;
+				float: left;
+				width: 510px;
+				display: block;
+			}
+		}
+		blockquote:before {
+			content: '"';
+			font-size: 25px;
+			font-weight: 600;
+			color: @gray;
+			display: block;
+			float: left;
+		}
+	}
+	.entry-comments {
+			padding: 0 30px;
+	}
     .contact-entry {
         font-weight: 300;
         line-height: 1.2;
@@ -506,15 +645,6 @@ body {
         height: 540px;
         padding: 30px;
         position: relative;
-        p {
-            margin: 10px 0;
-            a {
-                color: @blue;
-            }
-            strong {
-                font-weight: 600;
-            }
-        }
         .wpcf7 {
             width: 450px;
             height: 538px;
@@ -587,11 +717,9 @@ body {
                     color: @gray-dark;
                     .episode-image {
                         width: 140px;
+						height: 100px;
                         position: relative;
                         float: left;
-                        img {
-                            height: 100px;
-                        }
                         .play {
                             width: 52px;
                             height: 32px;
@@ -802,4 +930,31 @@ body {
             }
         }
     }
+	.error {
+		padding: 100px 30px;
+		h1 {
+			font-size: 50px;
+			line-height: 1.5;
+		}
+		h2 {
+			font-size: 25px;
+			text-transform: uppercase;
+			color: @gray;
+			padding: 0 0 30px 0;
+		}
+		span {
+			font-size: 16px;
+			line-height: 1.2;
+			color: @gray-dark;
+			width: 100%;
+			display: block;
+			a {
+				color: @blue;
+				text-decoration: none;
+			}
+		}
+		.button-blue {
+			margin: 30px 0 0 0;
+		}
+	}
 }

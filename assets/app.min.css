@@ -274,6 +274,9 @@ body {
   margin-bottom: 50px;
   position: relative;
 }
+.next-trip .next-trip-image {
+  height: 100%;
+}
 .next-trip .next-trip-info {
   height: 410px;
   padding: 250px 0 0 0;
@@ -339,32 +342,35 @@ body {
   float: left;
   margin: 5px 0 0 20px;
 }
-.last-trips .trip {
+.last-trips .trips .trip {
   overflow: hidden;
 }
-.last-trips .trip .trip-image {
+.last-trips .trips .trip .trip-image {
   height: 200px;
   overflow: hidden;
   position: relative;
 }
-.last-trips .trip .trip-info {
+.last-trips .trips .trip .trip-info {
   height: 140px;
   background: #1278ad;
   position: relative;
 }
-.last-trips .trip .trip-info h2 {
+.last-trips .trips .trip .trip-info h2 {
   font-size: 25px;
   color: #ffffff;
   text-transform: uppercase;
   padding: 20px 15px;
 }
-.last-trips .trip .trip-info .button-white {
+.last-trips .trips .trip .trip-info .button-white {
   margin: 0 0 0 15px;
   position: absolute;
   bottom: 15px;
 }
-.last-trips .trip .trip-info .watch {
+.last-trips .trips .trip .trip-info .watch {
   right: 15px;
+}
+.last-trips .trips li + li {
+  margin: 0 0 0 20px;
 }
 .social {
   border-top: 1px solid #1278ad;
@@ -481,7 +487,9 @@ body {
   font-weight: 600;
   margin: 20px 0 10px;
 }
+.container .page p,
 .container .entry-content p,
+.container .page ul,
 .container .entry-content ul {
   font-weight: 300;
   line-height: 1.2;
@@ -489,22 +497,198 @@ body {
   word-spacing: 1px;
   color: #666666;
 }
+.container .page strong,
 .container .entry-content strong {
   font-weight: 600;
 }
+.container .page a,
 .container .entry-content a {
   color: #666666;
+  text-decoration: underline;
 }
+.container .page p,
 .container .entry-content p {
   margin: 0 0 10px 0;
 }
-.container .entry-content ul {
-  list-style: square;
-  padding: 0 0 0 20px;
-  margin: 20px 0;
+.container .page p,
+.container .entry-content p {
+  margin: 10px 0;
 }
-.container .entry-content ul li + li {
-  margin: 10px 0 0 0;
+.container .page p a,
+.container .entry-content p a {
+  color: #1278ad;
+}
+.container .page p strong,
+.container .entry-content p strong {
+  font-weight: 600;
+}
+.container .page img,
+.container .entry-content img {
+  margin: 10px 0;
+}
+.container .page ul,
+.container .entry-content ul,
+.container .page ol,
+.container .entry-content ol {
+  margin: 10px 0;
+  line-height: 1.5;
+  padding: 0 0 0 30px;
+}
+.container .page ul li + li,
+.container .entry-content ul li + li,
+.container .page ol li + li,
+.container .entry-content ol li + li {
+  margin: 5px 0 0 0;
+}
+.container .page ul li ul,
+.container .entry-content ul li ul,
+.container .page ol li ul,
+.container .entry-content ol li ul {
+  margin: 5px 0 0 0;
+}
+.container .page ul,
+.container .entry-content ul {
+  list-style: disc outside;
+}
+.container .page ol,
+.container .entry-content ol {
+  list-style: decimal outside;
+}
+.container .page ul ul,
+.container .entry-content ul ul,
+.container .page ol ol,
+.container .entry-content ol ol,
+.container .page ul ol,
+.container .entry-content ul ol,
+.container .page ol ul,
+.container .entry-content ol ul {
+  margin-bottom: 0;
+}
+.container .page dl,
+.container .entry-content dl {
+  margin: 0 20px;
+}
+.container .page dt,
+.container .entry-content dt {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.container .page dd,
+.container .entry-content dd {
+  line-height: 1.5;
+  margin: 0 0 20px;
+}
+.container .page strong,
+.container .entry-content strong {
+  font-weight: bold;
+}
+.container .page cite,
+.container .entry-content cite,
+.container .page em,
+.container .entry-content em,
+.container .page i,
+.container .entry-content i {
+  font-style: italic;
+}
+.container .page cite,
+.container .entry-content cite {
+  border: none;
+}
+.container .page big,
+.container .entry-content big {
+  font-size: 120%;
+}
+.container .page pre,
+.container .entry-content pre {
+  border: 1px solid #ededed;
+  color: #666;
+  font-family: Consolas, Monaco, Lucida Console, monospace;
+  font-size: 12px;
+  line-height: 1.714285714;
+  margin: 24px 0;
+  overflow: auto;
+  padding: 24px;
+}
+.container .page code,
+.container .entry-content code,
+.container .page kbd,
+.container .entry-content kbd,
+.container .page samp,
+.container .entry-content samp,
+.container .page var,
+.container .entry-content var {
+  font-family: Consolas, Monaco, Lucida Console, monospace;
+  font-size: 12px;
+  line-height: 2;
+}
+.container .page abbr,
+.container .entry-content abbr,
+.container .page acronym,
+.container .entry-content acronym,
+.container .page dfn,
+.container .entry-content dfn {
+  border-bottom: 1px dotted #666;
+  cursor: help;
+}
+.container .page address,
+.container .entry-content address {
+  display: block;
+  line-height: 1.5;
+  margin: 0 0 24px;
+}
+.container .page del,
+.container .entry-content del {
+  color: #333;
+}
+.container .page ins,
+.container .entry-content ins {
+  background: #fff9c0;
+  border: none;
+  color: #333;
+  text-decoration: none;
+}
+.container .page sup,
+.container .entry-content sup,
+.container .page sub,
+.container .entry-content sub {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.container .page sup,
+.container .entry-content sup {
+  top: -0.5em;
+}
+.container .page sub,
+.container .entry-content sub {
+  bottom: -0.25em;
+}
+.container .page blockquote,
+.container .entry-content blockquote {
+  margin: 20px 0 20px 10px;
+  display: inline-block;
+}
+.container .page blockquote p,
+.container .entry-content blockquote p {
+  padding: 0 0 0 10px;
+  margin: 0 0 0 10px;
+  border-left: 1px solid #8d8d8d;
+  float: left;
+  width: 510px;
+  display: block;
+}
+.container .page blockquote:before,
+.container .entry-content blockquote:before {
+  content: '"';
+  font-size: 25px;
+  font-weight: 600;
+  color: #8d8d8d;
+  display: block;
+  float: left;
+}
+.container .entry-comments {
+  padding: 0 30px;
 }
 .container .contact-entry {
   font-weight: 300;
@@ -515,15 +699,6 @@ body {
   height: 540px;
   padding: 30px;
   position: relative;
-}
-.container .contact-entry p {
-  margin: 10px 0;
-}
-.container .contact-entry p a {
-  color: #1278ad;
-}
-.container .contact-entry p strong {
-  font-weight: 600;
 }
 .container .contact-entry .wpcf7 {
   width: 450px;
@@ -623,11 +798,9 @@ body {
 }
 .container aside ul li a .episode-image {
   width: 140px;
+  height: 100px;
   position: relative;
   float: left;
-}
-.container aside ul li a .episode-image img {
-  height: 100px;
 }
 .container aside ul li a .episode-image .play {
   width: 52px;
@@ -863,5 +1036,32 @@ body {
 }
 .container .episodes .episode .episode-info .buttons span span {
   margin: 0;
+}
+.container .error {
+  padding: 100px 30px;
+}
+.container .error h1 {
+  font-size: 50px;
+  line-height: 1.5;
+}
+.container .error h2 {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #8d8d8d;
+  padding: 0 0 30px 0;
+}
+.container .error span {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666666;
+  width: 100%;
+  display: block;
+}
+.container .error span a {
+  color: #1278ad;
+  text-decoration: none;
+}
+.container .error .button-blue {
+  margin: 30px 0 0 0;
 }
 
