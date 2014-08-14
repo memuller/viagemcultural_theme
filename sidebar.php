@@ -21,7 +21,7 @@
                         <li class="grid_4 alpha omega">
                             <a href="<?php echo $video->permalink ?>">
                                 <div class="episode-image clearfix">
-                                    <?php echo get_the_post_thumbnail($video->base->ID, 'sidebar_thumbnail', array('class' => 'grid_2 alpha')) ?>
+                                    <?php echo get_the_post_thumbnail($video->base->ID, 'sidebar_thumbnail', array('class' => 'grid_2 alpha scale', 'data-scale' => 'best-fill', 'data-align' => 'center')) ?>
                                     <img class="play" src="<?php bloginfo('template_directory'); ?>/images/play.png"/>
                                 </div>
                                 <h2 class="grid_2 omega"><?php echo $video->title ?></h2>
@@ -38,7 +38,9 @@
             <?php foreach ($post_object->related() as $related): ?>
                 <li class="grid_4 alpha omega">
                     <a href="<?php echo $related->permalink ?>">
-                        <?php echo get_the_post_thumbnail($related->ID, 'sidebar_thumbnail', array('class' => 'grid_2 alpha')) ?>
+                        <div class="episode-image">
+							<?php echo get_the_post_thumbnail($related->ID, 'sidebar_thumbnail', array('class' => 'grid_2 alpha scale', 'data-scale' => 'best-fill', 'data-align' => 'center')) ?>
+						</div>
                         <h2 class="grid_2 omega"><?php echo $related->title ?></h2>
                     </a>
                 </li>                
