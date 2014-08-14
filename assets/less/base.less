@@ -56,21 +56,21 @@ body {
 }
 
 .redetv-bar {
-    background: @gray-light;
+    background: @blue;
     color: #ffffff;
     height: 35px;
-    border-bottom: 2px solid @gray;
+    border-bottom: 2px solid @blue-dark;
     .redetv-brand {
         text-align: center;
         width: 110px;
-        background: @gray-dark;
+        background: @blue-dark;
         height: 40px;
         display: block;
     }
     span {
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 33px;
-		font-weight: 300;
+		font-weight: 400;
 		text-transform: uppercase;
 	}
 }
@@ -873,66 +873,78 @@ body {
             }
         }
     }
-    .episodes {
-        padding: 30px 0 10px 0;
-        .episode {
-            overflow: hidden;
-            margin: 0 0 0 50px;
-            .all-transition(200ms);
-            &:hover {
-                .episode-image {
-                    opacity: 0.7;
-                    filter: alpha(opacity=70);
-                }
-            }
-            & + li {
-                margin-top: 15px;
-                padding-top: 15px;
-                border-top: 1px solid @gray-lighter;
-            }
-            .episode-image {
-                height: 150px;
-                width: 180px;
-                overflow: hidden;
-                float: left;
-                position: relative;
-                .play {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    margin: -16px 0 0 -26px;
-                }
-            }
-            .episode-info {
-                height: 150px;
-                width: 678px;
-                float: left;
-                position: relative;
-                h2 {
-                    font-size: 25px;
-                    color: @blue;
-                    text-transform: uppercase;
-                    padding: 20px 15px;
-                    width: 678px;
-                }
-                .buttons {
-                    position: absolute;
-                    bottom: 10px;
-                    .button-blue {
-                        margin: 0 0 0 15px;
-                    }
-                    span {
-                        text-transform: uppercase;
-                        color: @gray-dark;
-                        margin: 0 0 0 30px;
-                        span {
-                        margin: 0;
-                        }
-                    }
-                }
-            }
-        }
-    }
+	.episodes-archive {
+		min-height: 400px;
+		h3 {
+			font-size: 18px;
+			text-transform: uppercase;
+			color: @blue;
+			margin: 20px;
+		}
+		& > .button-blue {
+			margin-left: 20px;
+		}
+		.episodes {
+			padding: 30px 0 10px 0;
+			.episode {
+				overflow: hidden;
+				margin: 0 0 0 50px;
+				.all-transition(200ms);
+				&:hover {
+					.episode-image {
+						opacity: 0.7;
+						filter: alpha(opacity=70);
+					}
+				}
+				& + li {
+					margin-top: 15px;
+					padding-top: 15px;
+					border-top: 1px solid @gray-lighter;
+				}
+				.episode-image {
+					height: 150px;
+					width: 180px;
+					overflow: hidden;
+					float: left;
+					position: relative;
+					.play {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						margin: -16px 0 0 -26px;
+					}
+				}
+				.episode-info {
+					height: 150px;
+					width: 678px;
+					float: left;
+					position: relative;
+					h2 {
+						font-size: 25px;
+						color: @blue;
+						text-transform: uppercase;
+						padding: 20px 15px;
+						width: 678px;
+					}
+					.buttons {
+						position: absolute;
+						bottom: 10px;
+						.button-blue {
+							margin: 0 0 0 15px;
+						}
+						span {
+							text-transform: uppercase;
+							color: @gray-dark;
+							margin: 0 0 0 30px;
+							span {
+							margin: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 	.error {
 		padding: 100px 30px;
 		h1 {

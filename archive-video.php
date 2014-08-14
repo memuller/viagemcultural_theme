@@ -8,9 +8,10 @@ get_header(); global $posts; ?>
     <div class="container_12">
         <h1 class="grid_8">Episódios do programa</h1>
     </div>
-    <div class="box container_12">
+    <div class="box episodes-archive container_12">
         <?php if (empty($posts)): ?>
-            <?php //Coisa para ser exibida quando nenhum resultado estiver presente ?>        
+            <h3>Não há conteúdo disponível ainda.</h3>
+			<a class="button-blue" href="<? bloginfo( 'url' ); ?>">Voltar para o início</a>
         <?php else: ?>
             <ul class="episodes clearfix">
                 <?php foreach ($posts as $post) { setup_postdata($post); $video = new \ViagemCultural\Video($post); $travel = $video->parent();  ?>
