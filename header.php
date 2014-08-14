@@ -50,7 +50,7 @@
                             <div class="submenu">
                                 <ul>
                                     <li>
-										<a href="<?php echo home_url('/videos/'.'programa-completo') ?>"><span>Programa Completo</span></a>
+										<a href="<?php echo home_url('/videos/'.'programas-completos') ?>"><span>Programa Completo</span></a>
 									</li>
                                     <li>
 										<a href="<?php echo home_url('/videos/'.'melhores-momentos') ?>"><span>Melhores momentos</span></a>
